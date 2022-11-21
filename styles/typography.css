@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700;1,6..72,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --nread: 'Newsreader',serif;
+  --inter: 'Inter Tight',sans-serif;
+  --stix: 'Stix Two Text',serif;
+  --readex: 'Readex Pro',sans-serif;
+  --agency: 'News Cycle',sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: var(--prim);
+  width: max-content;
+}
+
+a::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0%;
+  top: 0%;
+  left: 0%;
+  border-bottom: 1px solid var(--prim);
+}
+
+a:hover::after {
+  animation: forwardline 0.4s ease-out forwards;
+}
+
+@keyframes forwardline {
+  from { width: 0%; } to { width: 100%; }
+}
+
+cite {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+small {
+  font-size: 14px;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 .75rem 0;
+  line-height: 1.25;
+}
+
+h5 {
+  font-size: 1.48rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.5rem 0 .75rem 0;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+  h1 { font-size: 6.4rem; }
+  h2 { font-size: 4rem; }
+  h3 { font-size: 2.8rem; }
+  h4 { font-size: 1.64rem; }
+  h5 { font-size: 1.4rem; }
+  h6 { font-size: 1rem; }
+  p { font-size: 1rem; }
+
+}
+
+@media screen and (max-width: 640px) {
+
+ h1 { font-size: 3.2rem; }
+ h2 { font-size: 2.4rem; }
+ h3 { font-size: 2rem; }
+ h4 { font-size: 1.6rem;}
+ h5 { font-size: 1.48rem;}
+ h6 { font-size: 15px; }
+ p { font-size: 15px; }
+ small { font-size: 12px; }
+
+}
