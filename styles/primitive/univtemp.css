@@ -7,7 +7,7 @@ body, div {
 }
 
 .bdr {
-  border: 2px solid red;
+  border: 1px solid #fe4a49;
 }
 
 .stretch {
@@ -38,14 +38,8 @@ body, div {
 
 .box {
   display: flex;
-  width: 100%;
   padding: 8%;
   flex-direction: column;
-}
-
-.cc {
-  justify-content: center;
-  align-items: center;
 }
 
 .bk-image {
@@ -66,3 +60,17 @@ body, div {
 
 }
 
+
+/****************************************************************************************************
+STYLERS
+****************************************************************************************************/
+
+.cc {
+  justify-content: center;
+  align-items: center;
+}
+
+.cs {
+  justify-content: space-evenly;
+  align-items: center;
+}
