@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.genflex {
-  display: flex;
+html {
+  background-color: #272727;
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #10D56D;
 }

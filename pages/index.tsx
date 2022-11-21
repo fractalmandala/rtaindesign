@@ -8,6 +8,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 import Link from 'next/link'
+import { getSortedPostsData } from '../lib/posts'
 
 type Props = {
   allPosts: Post[]
@@ -26,14 +27,26 @@ export default function Index({ allPosts }: Props) {
             <div>
             <ul>
               <li>< Link href="/posts/intent">first</Link></li>
-              <li>second</li>
+              <li>< Link href="/about">About</Link></li>
             </ul>
             </div>
-        
         </Container>
       </Layout>
     </>
   )
 }
 
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ])
 
+  return {
+    props: { allPosts },
+  }
+}
