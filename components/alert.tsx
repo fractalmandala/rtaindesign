@@ -18,7 +18,7 @@ const Alert = ({ preview }: Props) => {
         <div className="py-2 text-center text-sm">
           {preview ? (
             <>
-              This page is a preview.{' '}
+              This is a test build by Bṛhat{' '}
               <a
                 href="/api/exit-preview"
                 className="underline hover:text-teal-300 duration-200 transition-colors"
@@ -29,12 +29,12 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
+              The main website is{' '}
               <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+                href={`https://brhat.in`}
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
-                available on GitHub
+                here.
               </a>
               .
             </>

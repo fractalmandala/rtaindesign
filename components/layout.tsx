@@ -1,6 +1,4 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
+import { Inter_Tight } from "@next/font/google"
 
 type Props = {
   preview?: boolean
@@ -10,12 +8,10 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <Meta />
-      <div className="min-h-screen">
-        <Alert preview={preview} />
+ 
+      <div>
         <main>{children}</main>
       </div>
-      <Footer />
     </>
   )
 }

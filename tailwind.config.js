@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
+        'accent-1': '#F1F1F1',
+        'accent-2': '#FE4A49',
+        'accent-7': '#FE4A49',
         success: '#0070f3',
         cyan: '#79FFE1',
       },
@@ -24,6 +24,10 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
+      },
+      fontFamily: {
+        sans: ['"Inter Tight"', 'sans-serif'],
+        serif: ['Newsreader', 'serif'],
       },
       boxShadow: {
         sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
