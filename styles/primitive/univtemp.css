@@ -1,4 +1,4 @@
-@import url('palette.css');
+@import url('palettes.css');
 @import url('variables.css');
 @import url('typography.css');
 
@@ -24,11 +24,19 @@ body, div {
   display: flex;
 }
 
+.genflex.row {
+  flex-direction: row;
+}
+
+.genflex.col {
+  flex-direction: column;
+}
+
 .genflex.w60 {
   width: 60%;
 }
 
-.contentbox {
+.box {
   display: flex;
   width: 100%;
   padding: 8%;

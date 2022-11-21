@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
 import localFont from '@next/font/local'
-import '../styles/globals.css'
+import '../styles/primitive/univtemp.css'
 
 const inter = localFont ({ src: '../public/assets/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf'})
 

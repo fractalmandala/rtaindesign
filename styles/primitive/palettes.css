@@ -1,0 +1,29 @@
+.bk-black {
+  background-color: #272727;
+  color: white;
+}
+
+.bk-white {
+  background-color: #f1f1f1;
+  color: #272727;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #272727;
+}
+
+.red {
+  color: #fe4a49;
+}
+
+.grey {
+  color: #878787;
+}
+
+.dark {
+  color: #474747;
+}
