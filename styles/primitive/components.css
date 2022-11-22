@@ -19,7 +19,7 @@
 }
 
 .type1 button {
-  background-color: var(--seconda);
+  background-color: #007CBE;
   color: white;
   transition: all 0.17s var(--snap);
   font-size: 16px;
@@ -33,11 +33,11 @@
 .type1 button:hover {
   transform: scale(0.9);
   border-radius: 16px;
-  background-color: var(--secondd);
+  background-color: #2364AA;
 }
 
 .type2 button {
-  background-color: var(--trimero);
+  background-color: #ff3d00;
   color: white;
   transition: all 0.17s var(--snap);
   font-size: 16px;
@@ -51,7 +51,7 @@
 .type2 button:hover {
   transform: scale(0.9);
   border-radius: 16px;
-  background-color: var(--trimerdd);
+  background-color: #ff1d00;
 }
 
 @media screen and (max-width: 640px) {

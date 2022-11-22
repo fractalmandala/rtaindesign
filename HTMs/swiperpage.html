@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -16,9 +17,11 @@
   }
 
   body { margin: 0; }
+
   .swiper-slide { 
     width: 100vw; 
     height: 100vh;
+    overflow: hidden;
   }
 
   .swiper-wrapper {
@@ -85,6 +88,17 @@
     background-position: center center;
     transition: all 0.6s ease-out;
   }
+
+  .im-new1 {
+    background-image: url('https://brhat.in/wp-content/uploads/2022/11/w107.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .type2 button {
+    box-shadow: 5px 4px 11px #212121, -4px -2px #313131;
+  }
 </style>
 </head>
 <body>
@@ -108,9 +122,68 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide slide2"></div>
-      <div class="swiper-slide slide3"></div>
-      <div class="swiper-slide slide4"></div>
+
+
+      <div class="swiper-slide slide2">
+        <div class="genflex row2 revv ff">
+          <div class="genflex col w60 .h100-70 ac ps6 f-white">
+            <h4 class="f-org w90">The Scrolls of Āryavarta</h4>
+            <p class="w90">Dhārmika lore, narrative and fiction- catering to our cultural yearnings for a Bhārata that once-was,
+                  and some of those that could-have-been.<br><br>Scrolls of Āryavarta is a project combining AI-rendered
+                  art with narrative storytelling to take us beyond time to a places we've all been to- but not in this
+                  lifetime.<br><br>
+                  The first chapter is a collaboration with The Emissary that takes us into the mind of a ṛṣi with a
+                  familiar name.
+            </p>
+            <div class="type2"><button>Explore</button></div>
+          </div>
+          <div class="genflex w40 .h100-30 im-new1">
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide3">
+        <div class="genflex row ff">
+          <div class="genflex col w40 bk-black cc">
+            <lottie-player src="https://brhat.in/wp-content/uploads/2022/11/bodhaonblack-1.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop  autoplay></lottie-player>
+          </div>
+          <div class="genflex col w60 ac ps6 f-white">
+            <h4 class="f-blue">Śatrubodha and Svayaṃbodha - Two Wheels of Civilization</h4>
+            <p class="f-black">The Hindu civilizational discourse has arguably entered the sophisticated phase. This is marked by a
+                  shift in the content of the discourse, a transition from the political to the cultural, civilizational
+                  and metaphysical.<br><br>Therefore, the responsibility of those engaging in this churn is to steer the
+                  conversation away from decadence and towards our tradition.<br><br>What then are the challenges and
+                  how can we develop the thinking resources to overcome those? Colloquially speaking, how can we think
+                  about a ‘thought framework’?</p>
+                <div class="type1"><button>Read More</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide4">
+        <div class="genflex row2 revv ff">
+          <div class="genflex col w25-100 h100">
+            <div class="cell h25 cel1"></div>
+            <div class="cell h25 cel2"></div>
+            <div class="cell h25 cel3"></div>
+            <div class="cell h25 cel4"></div>
+          </div>
+          <div class="genflex col w25 h100">
+            <div class="cell h25 cel5"></div>
+            <div class="cell h50 cel6"></div>
+            <div class="cell h25 cel7"></div>
+          </div>
+          <div class="genflex col w50 h100">
+            <div class="genflex col w101 h50"></div>
+            <div class="genflex row w101 h50">
+              <div class="genflex col w50"></div>
+              <div class="genflex col w50">
+                <div class="cell h25 cel8"></div>
+                <div class="cell h25 cel9"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="swiper-slide slide5"></div>
     </div>
     <div class="swiper-pagination"></div>

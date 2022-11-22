@@ -55,6 +55,10 @@ BOXES
   flex-direction: row;
 }
 
+.genflex.row2 {
+  flex-direction: row;
+}
+
 .genflex.col {
   flex-direction: column;
 }
@@ -75,6 +79,11 @@ BOXES
 
 .genflex.spread {
   justify-content: space-evenly;
+}
+
+.cell {
+  width: 100%;
+  display: flex;
 }
 
 
@@ -156,6 +165,10 @@ ACCORDION
     height: 33.33vh;
   }
 
+  .accopan h5 {
+    margin-bottom: 8px;
+  }
+
 }
 
 
@@ -167,6 +180,10 @@ STYLERS
 .ff {
   width: 100vw;
   height: 100vh;
+}
+
+.w101 {
+  width: 100%;
 }
 
 .w100 {
@@ -194,7 +211,11 @@ STYLERS
 }
 
 .w25 {
-  width: 22vw;
+  width: 25vw;
+}
+
+.w25-100 {
+  width: 25vw;
 }
 
 .h100, .h70, .h30 {
@@ -203,6 +224,14 @@ STYLERS
 
 .h100-70 {
   height: 100vh;
+}
+
+.h50 {
+  height: 50vh;
+}
+
+.h25 {
+  height: 25vh;
 }
 
 
@@ -243,6 +272,11 @@ STYLERS
 .ps4 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.ps6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pl2 {
@@ -288,6 +322,18 @@ SMALL
     height: 100vh;
   }
 
+  .genflex.row2 {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .genflex.row2.revv.ff {
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .genflex.col.revv {
     flex-direction: column-reverse;
   }
@@ -318,26 +364,41 @@ SMALL
   .genflex.p3 {
     padding: 1.6rem;
   }
+
+  .ac-ender {
+    justify-content: end;
+  }
   
   .card {
     width: 100vw;
     height: 80vh;
   }
 
+  .w60, .w40 {
+    width: 100%;
+  }
+
   .w25 {
-    width: inherit;
+    width: 25vw;
+  }
+
+  .w25-100 {
+    width: 100vw;
   }
   
   .h100-70 {
-    height: 77vh;
-    width: 100vw;
+    height: 70vh;
     margin: 0;
   }
 
   .h100-30 {
-    height: 23vh;
-    width: 100vw;
+    height: 30vh;
     margin: 0;
+  }
+
+  .ps6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .ps4 {

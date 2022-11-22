@@ -30,22 +30,30 @@
   color: #272727;
 } 
 
-.white {
+.f-white {
   color: #ffffff;
 }
 
-.black {
+.f-black {
   color: #272727;
 }
 
-.red {
+.f-red {
   color: #fe4a49;
 }
 
-.grey {
+.f-grey {
   color: #878787;
 }
 
-.dark {
+.f-dark {
   color: #474747;
+}
+
+.f-org {
+  color: #ff3d00;
+}
+
+.f-blue {
+  color: #007CBE;
 }

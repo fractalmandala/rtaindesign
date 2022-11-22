@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --gap: 8px;
+    }
+    
+    body {
+      margin: 0;
+      font-family: system-ui;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--gap);
+      padding: var(--gap);
+      height: 100vh;
+      position: relative;
+      background: #080b11;
+      display: -ms-grid;
+      -ms-grid-columns: 1fr;
+    }
+    .grid div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: calc(var(--gap) * 1.5);
+      min-height: 160px;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background-color: teal;
+      background-image: url("https://brhat.in/wp-content/uploads/2022/11/1440832.png");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition-property: filter, backdrop-filter, opacity, color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-transition-property: opacity, color, -webkit-filter, -webkit-backdrop-filter;
+      transition-property: opacity, color, -webkit-filter, -webkit-backdrop-filter;
+      -webkit-transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+    }
+    .grid div:hover {
+      color: #fff;
+    }
+    .grid div span:first-of-type {
+      z-index: 2;
+    }
+    .grid div .overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.8));
+      backdrop-filter: blur(6px);
+      transition-property: opacity;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out;
+      z-index: -1;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.8));
+      -webkit-backdrop-filter: blur(6px);
+      -webkit-transition-property: opacity;
+      -webkit-transition-duration: 0.4s;
+      -webkit-transition-timing-function: ease-out;
+    }
+    .grid div .shop {
+      display: block;
+      color: tomato;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 8px;
+      margin-bottom: -25px;
+      opacity: 0;
+      transition-property: margin-bottom, opacity;
+      transition-duration: 0.3s;
+      transition-timing-function: ethiopic-halehame-om-et;
+      z-index: 2;
+      -webkit-transition-property: margin-bottom, opacity;
+      -webkit-transition-duration: 0.3s;
+      -webkit-transition-timing-function: ethiopic-halehame-om-et;
+    }
+    .grid div:hover > .overlay {
+      opacity: 1;
+    }
+    .grid div:hover {
+      filter: brightness(1.2);
+      -webkit-filter: brightness(1.2);
+    }
+    .grid div:hover > .shop {
+      opacity: 1;
+      margin-bottom: 0;
+    }
+    .grid > div:nth-of-type(1) {
+      grid-column: 1/3;
+    }
+    .grid > div:nth-of-type(2) {
+      grid-column: 3/5;
+      grid-row: 1/3;
+    }
+    .grid > div:nth-of-type(4) {
+      grid-column: 2/3;
+      grid-row: 2/5;
+    }
+    
+    @media screen and (max-width: 840px) {
+      .grid {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid div {
+        min-height: auto;
+        aspect-ratio: 1/1;
+        width: 100%;
+      }
+      .grid > div:nth-of-type(1) {
+        grid-column: auto;
+      }
+      .grid > div:nth-of-type(2) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+      .grid > div:nth-of-type(4) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+
+    .item-1:hover .shop{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="item-1">
+      <span>The Latest at Bṛhat Open Library</span>
+      <span class="shop">Explore</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="alt">
+      <span>New at Dhīti</span>
+      <span class="shop">Essays from our Blog</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="item-1">
+      <span>Bṛhadmṛdaṅga</span>
+      <span class="shop">Human Aesthetics and the Cultural Expression</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="item-1">
+      <span>What's New</span>
+      <span class="shop">From latest at Bṛhat</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="item-1">
+      <span>Bṛhat Anveṣī</span>
+      <span class="shop">Culture Discovery and Experience Programs</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="alt">
+      <span>Ṛta in Design</span>
+      <span class="shop">Design Thinking, inspired by Dharma</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="alt">
+      <span>Fractal Maṇḍala</span>
+      <span class="shop">Civilizational Emergence and Consciousness</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="">
+      <span>Bṛhat Draṣṭā</span>
+      <span class="shop">Shared Online Learning and Bodha Development</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="alt">
+      <span>About Us</span>
+      <span class="shop">Philosophy, Advisors, Partners, Team</span>
+      <div class="overlay"></div>
+    </div>
+    <div class="item-1 alt">
+      <span>Contact</span>
+      <span class="shop">Write, Subscribe, Get Involved</span>
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+</body>
+</html>
