@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href=".././styles/index.css" />
+<style>
+  html {
+    font-family: 'Inter Tight',sans-serif;
+  }
+
+  body { margin: 0; }
+  .swiper-slide { 
+    width: 100vw; 
+    height: 100vh;
+  }
+
+  .swiper-wrapper {
+    height: 100vh;
+    transition-timing-function: cubic-bezier(1.000, 0.180, 0.175, 1.025);
+  }
+
+  .swiper {
+    height: 100vh;
+  }
+  .slide2, .slide4 {
+    background-color: #272727;
+  }
+
+  .slide1, .slide3, .slide5 {
+    background-color: #ffffff;
+  }
+
+  .header {
+    height: 64px;
+    width: 100vw;
+    margin-bottom: -64px;
+    background-color: #272727;
+    border-bottom: 1px solid #fe4a49;
+    z-index: 900;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .toggler {
+    padding: 8px;
+    display: flex;
+    font-family: 'Inter Tight',sans-serif;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .bk-image.im3 {
+    background-image: url('https://brhat.in/wp-content/uploads/2022/09/creative-culture-1024-1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.6s ease-out;
+
+  }
+
+  .bk-image.im4 {
+    background-image: url('https://brhat.in/wp-content/uploads/2022/09/research-policy-1024-1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.6s ease-out;
+  }
+
+  .bk-image.im5 {
+    background-image: url('https://brhat.in/wp-content/uploads/2022/09/develop-leader-1024-1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.6s ease-out;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="toggler">
+      Light Mode/Dark Mode
+    </div>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <div class="genflex ff acco">
+          <div class="genflex w30 bk-image ac-b ac im3 accopan">
+            <h5>Culture Creatives</h5>
+          </div>
+          <div class="genflex w30 bk-image ac-b ac im4 accopan">
+            <h5>Policy Research</h5>
+          </div>
+          <div class="genflex w30 bk-image ac-b ac im5 accopan">
+            <h5>Leadership Development</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide2"></div>
+      <div class="swiper-slide slide3"></div>
+      <div class="swiper-slide slide4"></div>
+      <div class="swiper-slide slide5"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    jQuery(document).ready(function(){	
+      function swiper_start(){
+        
+        var objWrapper = jQuery('.swiper');
+      
+      
+         var options = {
+            loop: true,
+            slidesPerView: 1,
+            mousewheel: {
+              invert: false,
+            },
+            speed: 800,
+            keyboard: {
+              enabled: true,
+            },
+            direction: "vertical",
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+          };
+        
+        var swiper = new Swiper('.swiper', options);
+              
+          objWrapper.on("uc_ajax_refreshed", function(){
+          swiper.loopDestroy();
+          swiper = new Swiper('.swiper', options);
+          });
+              
+      
+        jQuery(".swiper").hover(function() {
+          (this).swiper.autoplay.stop();
+      }, function() {
+          (this).swiper.autoplay.start();
+      });
+      
+      
+      }setTimeout(function(){if(jQuery(".swiper").length) swiper_start(); else
+        jQuery( document ).on( 'elementor/popup/show', () => { if(jQuery(".swiper").length) swiper_start();});},100);
+      });
+  </script>
+  <script>
+    jQuery(document).ready(function(){
+      jQuery(".toggler").on("click", () => {
+        jQuery("body").toggleClass(".dark-mode");
+      });
+    })
+        
+  
+  </script>
+</body>
+</html>

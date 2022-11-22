@@ -1,12 +1,34 @@
+:root {
+  --grey: #919191;
+  --dgrey: #474747;
+  --lgrey: #d7d7d7;
+  --blue: #007CBE;
+  --bluedd: #004A72;
+  --red: #fe4a49;
+  --orng: #10C56D;
+  --yell: #F6AE2D;
+  --slate: #FFFCF9;
+  --bgreen: #698F3F;
+  --green: #10c56d;
+  --near: #f7f7f7;
+  --viol: #2364AA;
+}
+
+
+
+
 .bk-black {
   background-color: #272727;
   color: white;
 }
 
 .bk-white {
-  background-color: #f1f1f1;
-  color: #272727;
+  background-color: #ffffff;
 }
+
+.bk-white h1, .bk-white h2, .bk-white h3, .bk-white h4, .bk-white h5, .bk-white h6, .bk-white p {
+  color: #272727;
+} 
 
 .white {
   color: #ffffff;

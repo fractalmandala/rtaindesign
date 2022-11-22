@@ -18,17 +18,38 @@
   padding: 0;
 }
 
+.tal-c {
+  text-align: center;
+}
+
 p {
   font-size: 1.1rem;
   line-height: 1.25;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
 }
 
 a {
-  text-decoration: none;
+  color: #10C56D;
   position: relative;
-  color: var(--prim);
-  width: max-content;
+}
+
+a::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  width: 0%;
+}
+
+a:hover::after {
+  animation: underliner 0.2s ease-in forwards;
+}
+
+@keyframes underliner {
+  0% { width: 0% ;}
+  100% { width: 100%;}
 }
 
 a::after {
@@ -54,11 +75,13 @@ cite {
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.5px;
+  font-family: var(--official);
 }
 
 small {
   font-size: 14px;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
 }
 
 h6 {
@@ -66,6 +89,7 @@ h6 {
   font-weight: 600;
   margin: 0.5rem 0 .75rem 0;
   line-height: 1.25;
+  font-family: var(--official);
 }
 
 h5 {
@@ -73,12 +97,15 @@ h5 {
   font-weight: 600;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
 }
 
 h4 {
   font-size: 2rem;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
+  font-weight: 600;
 }
 
 h3 {
@@ -86,6 +113,7 @@ h3 {
   font-weight: 700;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
 }
 
 h2 {
@@ -93,6 +121,7 @@ h2 {
   font-weight: 700;
   line-height: 1;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
 }
 
 h1 {
@@ -101,6 +130,14 @@ h1 {
   line-height: 1;
   text-transform: uppercase;
   margin: 0.5rem 0 .75rem 0;
+  font-family: var(--official);
+}
+
+@media screen and (max-width: 899px) and (min-width: 769px) {
+
+  p { font-size: 1rem;}
+  h4 {font-size: 1.6rem; width: 100%;}
+
 }
 
 
@@ -109,7 +146,7 @@ h1 {
   h1 { font-size: 6.4rem; }
   h2 { font-size: 4rem; }
   h3 { font-size: 2.8rem; }
-  h4 { font-size: 1.64rem; }
+  h4 { font-size: 1.56rem; }
   h5 { font-size: 1.4rem; }
   h6 { font-size: 1rem; }
   p { font-size: 1rem; }
@@ -121,8 +158,8 @@ h1 {
  h1 { font-size: 3.2rem; }
  h2 { font-size: 2.4rem; }
  h3 { font-size: 2rem; }
- h4 { font-size: 1.6rem;}
- h5 { font-size: 1.48rem;}
+ h4 { font-size: 1.32rem;}
+ h5 { font-size: 1.25rem;}
  h6 { font-size: 15px; }
  p { font-size: 15px; }
  small { font-size: 12px; }
