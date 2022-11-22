@@ -297,6 +297,18 @@ SMALL
 ****************************************************************************************************************/
 @media screen and (max-width: 768px) {
 
+  .colof60, .colof40 {
+    width: 100vw;
+  }
+
+  .colof40 {
+    height: 30%;
+  }
+
+  .colof60 {
+    height: 30%;
+  }
+
   .genflex {
     flex-direction: column;
   }
@@ -408,6 +420,15 @@ SMALL
 
   .ps4 h4 {
     width: 88%;
+  }
+
+  .ps4 h4 {
+    padding: 0;
+
+  }
+
+  .ps4 {
+    text-align: center;
   }
   
   

@@ -99,6 +99,40 @@
   .type2 button {
     box-shadow: 5px 4px 11px #212121, -4px -2px #313131;
   }
+
+  .colof60 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .colof40 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+    justify-content: center;
+    text-align: left;
+    width: 40%;
+    height: 100vh;
+  }
+
+  .colof60 p {
+    color: white;
+  }
+
+  @media screen and (max-width: 769px) {
+    .colof40, .colof60 {
+      width: 100%;
+      height: 100vh;
+      padding: 0;
+    }
+  }
+
+ 
 </style>
 </head>
 <body>
@@ -126,7 +160,7 @@
 
       <div class="swiper-slide slide2">
         <div class="genflex row2 revv ff">
-          <div class="genflex col w60 .h100-70 ac ps6 f-white">
+          <div class="colof60 bdr">
             <h4 class="f-org w90">The Scrolls of Āryavarta</h4>
             <p class="w90">Dhārmika lore, narrative and fiction- catering to our cultural yearnings for a Bhārata that once-was,
                   and some of those that could-have-been.<br><br>Scrolls of Āryavarta is a project combining AI-rendered
@@ -137,14 +171,14 @@
             </p>
             <div class="type2"><button>Explore</button></div>
           </div>
-          <div class="genflex w40 .h100-30 im-new1">
+          <div class="colof40 bdr im-new1">
 
           </div>
         </div>
       </div>
       <div class="swiper-slide slide3">
         <div class="genflex row ff">
-          <div class="genflex col w40 bk-black cc">
+          <div class="#">
             <lottie-player src="https://brhat.in/wp-content/uploads/2022/11/bodhaonblack-1.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop  autoplay></lottie-player>
           </div>
           <div class="genflex col w60 ac ps6 f-white">
@@ -160,29 +194,19 @@
         </div>
       </div>
       <div class="swiper-slide slide4">
-        <div class="genflex row2 revv ff">
-          <div class="genflex col w25-100 h100">
-            <div class="cell h25 cel1"></div>
-            <div class="cell h25 cel2"></div>
-            <div class="cell h25 cel3"></div>
-            <div class="cell h25 cel4"></div>
+        <div class="column30">
+          <div class="postimage">
+            <div class="postcat"></div>
           </div>
-          <div class="genflex col w25 h100">
-            <div class="cell h25 cel5"></div>
-            <div class="cell h50 cel6"></div>
-            <div class="cell h25 cel7"></div>
+          <div class = "postdetas">
+            <h6>title</h6>
+            <p>desc</p>
+            <cite></cite>
           </div>
-          <div class="genflex col w50 h100">
-            <div class="genflex col w101 h50"></div>
-            <div class="genflex row w101 h50">
-              <div class="genflex col w50"></div>
-              <div class="genflex col w50">
-                <div class="cell h25 cel8"></div>
-                <div class="cell h25 cel9"></div>
-              </div>
-            </div>
-          </div>
+
         </div>
+        <div class="column30"></div>
+        <div class="column30"></div>
       </div>
       <div class="swiper-slide slide5"></div>
     </div>
