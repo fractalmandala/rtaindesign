@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href=".././styles/primitive/univtemp.css"/>
+  <link rel="stylesheet" href=".././styles/primitive/pluginers/splider.css"/>
+</head>
+<body>
+  <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="genflex ff bk-black"></div>
+        </li>
+        <li class="splide__slide">
+          <div class="genflex ff"></div>
+        </li>
+        <li class="splide__slide">
+          <div class="genflex ff bk-black"></div>
+        </li>
+        <li class="splide__slide">
+          <div class="genflex ff"></div>
+        </li>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"> </script>
+<script>
+ var splide = new Splide( '.splide', {
+    type: 'loop',
+    direction: 'ttb',
+    wheel: true,
+    waitForTransition: true,
+    wheelSleep: 400,
+    speed: 550,
+    keyboard: 'global',
+    easing: 'cubic-bezier(0.945, 0.045, 0.355, 1.000)',
+    height: '100vh',
+  });
+  splide.mount(window.splide.Extensions);
+</script>
+</body>
+</html>

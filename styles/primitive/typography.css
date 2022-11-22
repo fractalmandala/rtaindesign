@@ -96,9 +96,10 @@ h2 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 120px;
   font-weight: 700;
   line-height: 1;
+  text-transform: uppercase;
   margin: 0.5rem 0 .75rem 0;
 }
 

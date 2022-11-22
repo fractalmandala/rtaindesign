@@ -1,12 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+@import url('./primitive/typography.css');
 
 html {
   background-color: #272727;
   color: #FFFFFF;
+  font-family: var(--inter);
+  font-weight: 300;
 }
 
-h1 {
-  color: #10D56D;
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  color: #10C56D;
+  position: relative;
+}
+
+a::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  width: 0%;
+}
+
+a:hover::after {
+  animation: underliner 0.2s ease-in forwards;
+}
+
+@keyframes underliner {
+  0% { width: 0% ;}
+  100% { width: 100%;}
+}
+
+
+.genflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.ff {
+  width: 100vw;
+  height: 100vh;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.bk-wht {
+  background-color: #f1f1f1;
+  color: #272727;
+}
+
+.genflex.p4 {
+  padding: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+
+.genflex {
+  flex-direction: column;
+}
+
 }

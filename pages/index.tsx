@@ -1,14 +1,8 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 import Link from 'next/link'
-import { getSortedPostsData } from '../lib/posts'
 
 type Props = {
   allPosts: Post[]
@@ -18,15 +12,19 @@ export default function Index({ allPosts }: Props) {
   return (
     <>
       <Layout>
-        <Head>
-          <title>A Place to Build and Create</title>
-        </Head>
+      
         <Container>
-          <Intro />
-            <h5>A List of Sections:</h5>
+            <h1>Ṛta in Design</h1>
             <div>
             <ul>
-              <li>< Link href="/posts/intent">first</Link></li>
+              <li><h4>Introduction and Recap</h4>
+              <ul>
+                <li><p>Design, Systems and Dharma</p></li>
+                <li><p>What this Guide Contains</p></li>
+                <li><p>How to Use this Guide</p></li>
+                </ul>
+                </li>
+              <li>< Link href="/ridsections">Sections</Link></li>
               <li>< Link href="/about">About</Link></li>
             </ul>
             </div>

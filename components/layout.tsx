@@ -9,8 +9,11 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
  
-      <div>
+      <div className="genflex ff">
+        <div className="genflex p4 w50">
         <main>{children}</main>
+        </div>
+        <div className="genflex w50 bk-wht"></div>
       </div>
     </>
   )
