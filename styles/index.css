@@ -10,10 +10,14 @@ html, body {
 }
 
 .headbox h1 {
-  font-size: 240px;
+  font-size: 80px;
   font-weight: 500;
   letter-spacing: -8px;
   font-family: 'Readex Pro',sans-serif;
+}
+
+.listing {
+  margin: 1rem -;
 }
 
 .mainlist {
@@ -22,25 +26,11 @@ html, body {
   font-size :12px;
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.listing a{
+  font-size: 15px;
+  font-weight: 800;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
 
 .dark-mode {
   background-color: #272727;

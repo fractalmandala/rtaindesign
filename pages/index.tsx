@@ -19,9 +19,9 @@ export default function Index({ allPosts }: Props) {
             </div>
             <div className="mainlist">
             <ul>
-              <li>< Link href="/ridsections">Sections</Link></li>
-              <li>< Link href="/about">About</Link></li>
-              <li>< Link href="/pageofswiper">Swiper</Link></li>
+              <li className="listing">< Link href="/ridsections">Sections</Link></li>
+              <li className="listing">< Link href="/about">About</Link></li>
+              <li className="listing">< Link href="/pageofswiper">Swiper</Link></li>
             </ul>
             </div>
         </Container>

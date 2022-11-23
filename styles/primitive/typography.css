@@ -13,6 +13,18 @@
 
 }
 
+.typ-stix {
+  font-family: 'STIX Two Text',serif;
+}
+
+.typ-news {
+  font-family: 'Newsreader', serif;
+}
+
+.typ-int {
+  font-family: 'Inter Tight', serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +35,7 @@
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 20px;
   line-height: 1.25;
   margin: 0.5rem 0 .75rem 0;
   font-family: 'Stix Two Text',serif;
@@ -71,10 +83,9 @@ small {
 
 h6 {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0.5rem 0 .75rem 0;
   line-height: 1.25;
-  font-family: 'STIX Two Text',serif;
 }
 
 h5 {
@@ -82,20 +93,18 @@ h5 {
   font-weight: 600;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: 'STIX Two Text',serif;
 }
 
 h4 {
   font-size: 2rem;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: 'inter tight',serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 900 !important;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
   font-family: 'inter tight',serif;
@@ -110,7 +119,7 @@ h2 {
 }
 
 h1 {
-  font-size: 144px;
+  font-size: 80px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;

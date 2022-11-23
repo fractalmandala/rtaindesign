@@ -1,21 +1,25 @@
 import Link from 'next/link'
-import { Navigation, Pagination, Mousewheel, A11y } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, A11y } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default () => {
+import styles from './slider.module.css'
+
+export function PageSwipe() {
   return (
     <Swiper
       // install Swiper modules
       modules={[Navigation, Mousewheel, Pagination, A11y]}
       spaceBetween={0}
       direction={"vertical"}
-      mousewheel={true}
+      speed={800}
+      mousewheel= {
+        {invert: true}
+      }
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
@@ -30,7 +34,7 @@ export default () => {
       <SwiperSlide><div className="genflex ff bk-black">Slide 2</div></SwiperSlide>
       <SwiperSlide><div className="genflex ff">Slide 3</div></SwiperSlide>
       <SwiperSlide><div className="genflex ff bk-black">Slide 4</div></SwiperSlide>
-      ...
+      
     </Swiper>
   );
 };

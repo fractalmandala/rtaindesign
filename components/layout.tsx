@@ -1,5 +1,6 @@
 import { Inter_Tight } from "@next/font/google"
 import Image from 'next/legacy/image'
+import Header from './header'
 
 type Props = {
   preview?: boolean
@@ -9,7 +10,7 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
- 
+   
       <div className="genflex ff">
         <div className="genflex p4 bk-black">
         <main>{children}</main>

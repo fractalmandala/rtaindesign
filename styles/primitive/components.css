@@ -54,6 +54,25 @@
   background-color: #ff1d00;
 }
 
+.type4 button {
+  background-color: #fe4a49;
+  color: white;
+  transition: all 0.17s var(--snap);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.type4 button:hover {
+  transform: scale(0.9);
+  border-radius: 16px;
+  background-color: #BB3D52;
+}
+
+
 @media screen and (max-width: 640px) {
 
   .type1 button, .type0 button, .type2 button {

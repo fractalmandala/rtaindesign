@@ -2,12 +2,11 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <h2>
+    <h1>
       <Link href="/" className="hover:underline">
-        Bṛhat Open Library
+        Ṛta in Design
       </Link>
-      .
-    </h2>
+    </h1>
   )
 }
 
