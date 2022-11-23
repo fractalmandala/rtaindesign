@@ -29,12 +29,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <div className="genflex ff cc bk-black disp-row">
+        <div className="genflex bb-g ff cc bk-black disp-row">
           <div className="genflex w99 h100">
-      <main className={inter.className}> </main>
     <Component {...pageProps} />
     </div>
-    <div className="genflex w1 h100 oonk bk-green"></div>
+    <div className="genflex w1 h100 oonk gr-green"></div>
     </div>
       </SwiperSlide>
       <SwiperSlide>

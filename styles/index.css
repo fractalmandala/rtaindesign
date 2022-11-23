@@ -1,6 +1,7 @@
 @import url('./primitive/typography.css');
 @import url('./primitive/palettes.css');
 @import url('./primitive/components.css');
+@import url('./primitive/animations.css');
 
 
 html, body {
@@ -278,7 +279,7 @@ STYLERS
 }
 
 .w1 {
-  width: 1vw;
+  width: 4px;
 }
 
 .h100, .h70, .h30 {
@@ -354,6 +355,14 @@ STYLERS
   padding-left: 4rem;
 }
 
+
+/****************************************************************************************************************
+BORDERS
+****************************************************************************************************************/
+
+.bb-g {
+  border-bottom: 1px solid #d7d7d7;
+}
 
 /****************************************************************************************************************
 SMALL

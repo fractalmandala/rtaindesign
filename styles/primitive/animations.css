@@ -7,3 +7,35 @@
   top: 0%;
   left: 0;
 }
+
+#trinfinity2 {
+  box-shadow: 8px 8px 16px #212121, -5px -4px 12px #313131;
+}
+
+#r, #t, #a, #ione, #none, #d, #e, #s, #itwo, #g, #ntwoo, #circle, #circle2, #trinfinity, #ellipse {
+  opacity: 0;
+}
+
+#ellipse {
+  animation: appear
+}
+
+#ellipse2 {
+  fill: linear-gradient(117deg, rgba(136,156,47,1) 0%, rgba(70,156,47,1) 30%, rgba(22,219,101,1) 100%);
+  animation: genrahl 3s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes genral {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.8);}
+}
+
+@keyframes therotator {
+  0%, 100% {
+    background: linear-gradient(180deg, #06C15C, #79F23F);
+  }
+  50% {
+    background: linear-gradient(0deg, #06C15C, #79F23F);
+  }
+}
