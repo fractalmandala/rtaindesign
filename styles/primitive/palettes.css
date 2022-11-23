@@ -30,6 +30,22 @@
   color: #272727;
 } 
 
+.bk-green {
+  background-color: #16db65;
+}
+
+.bk-yell {
+  background-color: #f4d35e;
+}
+
+.bk-blue {
+  background-color: #00a6fb;
+}
+
+.bk-red {
+  background-color: #fe4a49;
+}
+
 .f-white {
   color: #ffffff;
 }

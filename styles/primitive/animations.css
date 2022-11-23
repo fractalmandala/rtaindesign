@@ -1,0 +1,9 @@
+.oonk::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 4x solid white;
+  content: '';
+  top: 0%;
+  left: 0;
+}

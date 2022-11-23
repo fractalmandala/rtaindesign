@@ -9,6 +9,25 @@ html, body {
   font-weight: 300;
 }
 
+.oonk {
+  position: relative;
+}
+
+.swiper-slide { 
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  height: 100vh;
+  transition-timing-function:  cubic-bezier(1.000, 0.015, 0.810, 0.995);
+}
+
+.swiper {
+  height: 100vh;
+}
+
 .headbox h1 {
   font-size: 80px;
   font-weight: 500;
@@ -68,6 +87,11 @@ BOXES
   display: flex;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+}
+
+.disp-row {
+  flex-direction: row;
 }
 
 .genflex.row {
@@ -209,8 +233,16 @@ STYLERS
   width: 100vw;
 }
 
+.w99 {
+  width: 99vw;
+}
+
 .w90 {
-  width: 90%;
+  width: 90vw;
+}
+
+.w80 {
+  width: 80vw;
 }
 
 .w60 {
@@ -229,12 +261,24 @@ STYLERS
   width: 33.33vw;
 }
 
+.w20 {
+  width: 20vw;
+}
+
 .w25 {
   width: 25vw;
 }
 
+.w10 {
+  width: 10vw;
+}
+
 .w25-100 {
   width: 25vw;
+}
+
+.w1 {
+  width: 1vw;
 }
 
 .h100, .h70, .h30 {
