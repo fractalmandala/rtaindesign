@@ -26,30 +26,15 @@ p {
   font-size: 1.1rem;
   line-height: 1.25;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'Stix Two Text',serif;
 }
 
 a {
   color: #10C56D;
   position: relative;
-}
-
-a::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid white;
-  width: 0%;
-}
-
-a:hover::after {
-  animation: underliner 0.2s ease-in forwards;
-}
-
-@keyframes underliner {
-  0% { width: 0% ;}
-  100% { width: 100%;}
+  font-family: inherit;
+  text-decoration: none;
+  line-height: inherit;
 }
 
 a::after {
@@ -59,7 +44,7 @@ a::after {
   width: 0%;
   top: 0%;
   left: 0%;
-  border-bottom: 1px solid var(--prim);
+  border-bottom: 1px solid #10C56C;
 }
 
 a:hover::after {
@@ -89,7 +74,7 @@ h6 {
   font-weight: 600;
   margin: 0.5rem 0 .75rem 0;
   line-height: 1.25;
-  font-family: var(--official);
+  font-family: 'STIX Two Text',serif;
 }
 
 h5 {
@@ -97,14 +82,14 @@ h5 {
   font-weight: 600;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'STIX Two Text',serif;
 }
 
 h4 {
   font-size: 2rem;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'inter tight',serif;
   font-weight: 600;
 }
 
@@ -113,24 +98,24 @@ h3 {
   font-weight: 700;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'inter tight',serif;
 }
 
 h2 {
   font-size: 4.8rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'STIX Two Text',serif;
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 144px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
+  font-family: 'inter tight',serif;
 }
 
 @media screen and (max-width: 899px) and (min-width: 769px) {

@@ -1,4 +1,5 @@
 import { Inter_Tight } from "@next/font/google"
+import Image from 'next/legacy/image'
 
 type Props = {
   preview?: boolean
@@ -10,10 +11,16 @@ const Layout = ({ preview, children }: Props) => {
     <>
  
       <div className="genflex ff">
-        <div className="genflex p4 w50">
+        <div className="genflex p4 bk-black">
         <main>{children}</main>
         </div>
-        <div className="genflex w50 bk-wht"></div>
+        <div className="genflex w40 bk-black">
+          <Image src="/Users/amrit/Project Syn/verszeroth/public/images/trinfinity.png"
+          width={400}
+          height={400}
+          alt=""
+          />
+        </div>
       </div>
     </>
   )

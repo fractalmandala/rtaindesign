@@ -14,18 +14,14 @@ export default function Index({ allPosts }: Props) {
       <Layout>
       
         <Container>
+            <div className="headbox">
             <h1>Ṛta in Design</h1>
-            <div>
+            </div>
+            <div className="mainlist">
             <ul>
-              <li><h4>Introduction and Recap</h4>
-              <ul>
-                <li><p>Design, Systems and Dharma</p></li>
-                <li><p>What this Guide Contains</p></li>
-                <li><p>How to Use this Guide</p></li>
-                </ul>
-                </li>
               <li>< Link href="/ridsections">Sections</Link></li>
               <li>< Link href="/about">About</Link></li>
+              <li>< Link href="/pageofswiper">Swiper</Link></li>
             </ul>
             </div>
         </Container>
