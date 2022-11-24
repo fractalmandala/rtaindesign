@@ -3,12 +3,6 @@
 @import url('../styles/primitive/components.css');
 
 
-html, body {
-  background-color: #ffffff;
-  color: #272727;
-  font-weight: 300;
-}
-
 .dark-mode {
   background-color: #272727;
   color: white;

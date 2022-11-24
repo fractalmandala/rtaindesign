@@ -4,12 +4,6 @@
 @import url('./primitive/animations.css');
 
 
-html, body {
-  background-color: #ffffff;
-  color: #272727;
-  font-weight: 300;
-}
-
 .oonk {
   position: relative;
 }
@@ -18,6 +12,11 @@ html, body {
   width: 100vw; 
   height: 100vh;
   overflow: hidden;
+  background-color: #ffffff;
+  color: #272727;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper-wrapper {

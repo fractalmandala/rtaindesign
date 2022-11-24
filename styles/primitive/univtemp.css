@@ -2,9 +2,6 @@
 @import url('variables.css');
 @import url('typography.css');
 
-body, div {
-  margin: 0;
-}
 
 .bdr {
   border: 1px solid #fe4a49;
