@@ -72,6 +72,10 @@
   background-color: #BB3D52;
 }
 
+.bdr-b {
+  border: 1px solid #474747;
+}
+
 
 @media screen and (max-width: 640px) {
 

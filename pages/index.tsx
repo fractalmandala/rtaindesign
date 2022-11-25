@@ -14,9 +14,7 @@ export default function Index({ allPosts }: Props) {
   return (
     <>
       <Layout>
-          <div className="headerkind">
-            <Link href="/about">About</Link>
-          </div>
+        
       </Layout>
     </>
   )

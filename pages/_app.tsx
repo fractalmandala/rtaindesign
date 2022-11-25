@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { AppProps } from 'next/app'
 import localFont from '@next/font/local'
 import { NextUIProvider } from '@nextui-org/react';
@@ -9,11 +10,10 @@ import 'swiper/css/keyboard';
 import 'swiper/css/mousewheel';
 import '../styles/index.css'
 
-const inter = localFont ({ src: '../public/assets/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf'})
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
   <NextUIProvider>
+    <div className="headerkind"><Link href="/">Home</Link></div>
      <Swiper
       // install Swiper modules
       modules={[A11y, Keyboard, Mousewheel]}
@@ -29,29 +29,20 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <div className="genflex bb-g ff cc bk-black disp-row">
-          <div className="genflex w99 h100">
-    <Component {...pageProps} />
-    </div>
-    <div className="genflex w1 h100 oonk gr-green"></div>
-    </div>
+        <div className="genfle-r bb-g ff cc bk-white bdr-b">
+          <Component {...pageProps} />
+          </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex ff cc bk-black disp-row">
-      <div className="genflex w99 00a6fb h100"></div>
-      <div className="genflex w1 h100 oonk bk-yell"></div>
+      <div className="genflex-r ff cc bk-white bdr-b">
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex ff cc bk-black disp-row">
-      <div className="genflex w99 00a6fb h100"></div>
-      <div className="genflex w1 h100 oonk bk-blue"></div>
+      <div className="genflex-r ff cc bk-white bdr-b">
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex ff cc bk-black disp-row">
-      <div className="genflex w99 00a6fb h100"></div>
-      <div className="genflex w1 h100 oonk bk-red"></div>
+      <div className="genflex-r ff cc bk-white bdr-b">
         </div>
       </SwiperSlide>
       ...

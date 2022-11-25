@@ -15,9 +15,6 @@ a {
 
 }
 
-.oonk {
-  position: relative;
-}
 
 .swiper-slide { 
   width: 100vw; 
@@ -68,11 +65,6 @@ a {
 }
 
 
-.dark-mode {
-  background-color: #272727;
-  color: white;
-}
-
 .kill {
   display: none;
 }
@@ -111,21 +103,13 @@ BOXES
   flex-direction: column;
 }
 
-.disp-row {
-  flex-direction: row;
-}
-
-.genflex.row {
-  flex-direction: row;
-}
-
-.genflex.row2 {
-  flex-direction: row;
-}
-
-.genflex.col {
+.genflex-r {
+  display: flex;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
 }
+
 
 .genflex.p4 {
   padding: 4rem;
@@ -135,15 +119,7 @@ BOXES
   padding: 2.8rem;
 }
 
-.genflex.cc {
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
 
-.genflex.spread {
-  justify-content: space-evenly;
-}
 
 .cell {
   width: 100%;
