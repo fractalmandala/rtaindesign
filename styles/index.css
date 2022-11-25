@@ -3,6 +3,17 @@
 @import url('./primitive/components.css');
 @import url('./primitive/animations.css');
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #53dd6c;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
 
 .oonk {
   position: relative;
@@ -33,6 +44,16 @@
   font-weight: 500;
   letter-spacing: -8px;
   font-family: 'Readex Pro',sans-serif;
+}
+
+.headerkind {
+  width: 100vw;
+  height: 48px;
+  border-bottom: 1px solid #474747;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 32px;
 }
 
 .mainlist {
