@@ -1,7 +1,5 @@
 import { A11y, Keyboard, Mousewheel } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Mother from '../components/mother'
-import Sidenav from '../components/sidenav'
 import Genflex from '../components/genflex'
 import styles from './mystyles.module.css'
 
@@ -31,16 +29,25 @@ const MySwiper = ({ preview, children }: Props) => {
             onSlideChange={() => console.log('slide change')}
             >
             <SwiperSlide>
-            <Genflex>  </Genflex>
+            <Genflex> 
+            {children}
+               </Genflex>
             </SwiperSlide>
             <SwiperSlide>
-            <Genflex>  </Genflex>
+            <Genflex> 
+            {children}
+              
+               </Genflex>
             </SwiperSlide>
             <SwiperSlide>
-            <Genflex> </Genflex>
+            <Genflex> 
+
+            {children}
+            </Genflex>
             </SwiperSlide>
             <SwiperSlide>
-            <Genflex> </Genflex>
+            <Genflex>
+            {children} </Genflex>
             </SwiperSlide>
             
             </Swiper>

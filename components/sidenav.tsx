@@ -9,6 +9,7 @@ const Sidenav = ({ preview, children }: Props) => {
   return (
     <>
     <div className="sidenav w20-80 bk-black">
+    {children}
     </div>
     </>
   )

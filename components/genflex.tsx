@@ -9,7 +9,8 @@ type Props = {
 const Genflex = ({ preview, children }: Props) => {
   return (
     <>
-    <div className="genflex-r w80-100 cc bk-black bdr-a">1
+    <div className="genflex-r w80-100 cc bk-black bdr-a">
+    {children}
     </div>
     </>
   )

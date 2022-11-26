@@ -9,6 +9,7 @@ const Mother = ({ preview, children }: Props) => {
   return (
     <>
     <div className="mother bk-black">
+      {children}
     </div>
     </>
   )
