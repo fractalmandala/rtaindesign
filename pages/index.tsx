@@ -1,20 +1,18 @@
-import Layout from '../components/layout'
-import Post from '../interfaces/post'
 import Link from 'next/link'
-import { animate } from 'motion'
-
-type Props = {
-  allPosts: Post[]
-}
-
+import { NextUIProvider } from '@nextui-org/react';
+import Mother from '../components/mother'
+import Sidenav from '../components/sidenav'
+import MySwiper from '../components/swiperpanel'
 
 
-export default function Index({ allPosts }: Props) {
+export default function Home() {
   return (
-    <>
-    <Layout>
-    ṛta in design
-    </Layout>
-    </>
+    <NextUIProvider>
+      <Mother>
+        <Sidenav> Ṛta in Design <br></br> Fractal Maṇḍala</Sidenav>
+        <MySwiper> </MySwiper>
+      </Mother>
+    </NextUIProvider>
   )
 }
+

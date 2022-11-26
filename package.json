@@ -7,6 +7,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@markdoc/markdoc": "^0.2.1",
+    "@markdoc/next.js": "^0.2.1",
     "@next/font": "^13.0.4",
     "@nextui-org/react": "^1.0.0-beta.10",
     "@supabase/supabase-js": "^2.1.1",

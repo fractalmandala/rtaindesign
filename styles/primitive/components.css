@@ -72,9 +72,20 @@
   background-color: #BB3D52;
 }
 
+.bdr-a {
+  border-right: 4px solid #2ADD5A;
+}
+
 .bdr-b {
-  border-left: 1px solid #474747;
-  border-right: 1px solid #474747;
+  border-right: 4px solid #30D2FF;
+}
+
+.bdr-c {
+  border-right : 4px solid #FF9E3D;
+}
+
+.bdr-d {
+  border-right: 4px solid #FF3232;
 }
 
 
