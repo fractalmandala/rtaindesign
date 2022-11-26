@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import { AppProps } from 'next/app'
-import localFont from '@next/font/local'
 import { NextUIProvider } from '@nextui-org/react';
 import { A11y, Keyboard, Mousewheel } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,9 +8,18 @@ import 'swiper/css/keyboard';
 import 'swiper/css/mousewheel';
 import '../styles/index.css'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function RootLayout({
+  // Layouts must accept a children prop.
+  // This will be populated with nested layouts or pages
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-  <NextUIProvider>
+    <html lang="en">
+      <body>
+      <NextUIProvider>
+    
      <Swiper
       // install Swiper modules
       modules={[A11y, Keyboard, Mousewheel]}
@@ -29,9 +36,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     >
       <SwiperSlide>
         <div className="genfle-r bb-g ff cc bk-white bdr-b">
-          <Component {...pageProps} />
-          </div>
-      </SwiperSlide>
+        {children}
+        </div>
+        </SwiperSlide>
       <SwiperSlide>
       <div className="genflex-r ff cc bk-white bdr-b">
         </div>
@@ -49,5 +56,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   
   
 </NextUIProvider>
-  )
+
+        </body>
+    </html>
+  );
 }

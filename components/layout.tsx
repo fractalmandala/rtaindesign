@@ -11,18 +11,12 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
    
-      <div className="genflex ff">
-        <div className="genflex p4 bk-black">
+    
+        <div className="genflex p4">
         <main>{children}</main>
         </div>
-        <div className="genflex w40 bk-black">
-          <Image src="/Users/amrit/Project Syn/verszeroth/public/images/trinfinity.png"
-          width={400}
-          height={400}
-          alt=""
-          />
-        </div>
-      </div>
+       
+     
     </>
   )
 }
