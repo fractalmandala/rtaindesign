@@ -13,7 +13,7 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-   <Header> </Header>
+   <Header></Header>
    <Sidenav> </Sidenav>
     <MySwiper> 
     {children}

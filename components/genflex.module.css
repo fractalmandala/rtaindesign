@@ -1,0 +1,12 @@
+.genflex-r {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #232423;
+}
+
+.cc {
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+.swiper-slide { 
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+  color: #272727;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.swiper-wrapper {
+  height: 100vh;
+  transition-timing-function:  cubic-bezier(1.000, 0.015, 0.810, 0.995);
+  box-sizing: border-box;
+}
+
+.swiper {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+

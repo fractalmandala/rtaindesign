@@ -1,5 +1,4 @@
-import styles from './mystyles.module.css'
-
+import styles from './mother.module.css'
 
 type Props = {
   preview?: boolean
@@ -10,7 +9,7 @@ const Mother = ({ preview, children }: Props) => {
   return (
     <>
     
-    <div className="mother bk-black">
+    <div className="mother">
       {children}
     </div>
     </>

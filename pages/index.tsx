@@ -1,18 +1,16 @@
-import Link from 'next/link'
-import { NextUIProvider } from '@nextui-org/react';
-import Mother from '../components/mother'
-import Sidenav from '../components/sidenav'
-import MySwiper from '../components/swiperpanel'
+
 import Layout from '../components/layout'
 
+type Props = {
+  preview?: boolean
+  children: React.ReactNode
+}
 
-export default function Home() {
+export default function Home({children,preview}: Props) {
   return (
-    <NextUIProvider>
-     <Layout>
-Ṛta in Design | Fractal Maṇḍala
-     </Layout>
-    </NextUIProvider>
+    <>
+
+    </>
   )
 }
 

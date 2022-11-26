@@ -1,43 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Inter Tight', sans-serif;
-}
 
 
-
-.swiper-slide { 
-  width: 100vw; 
-  height: 100vh;
-  overflow: hidden;
-  color: #272727;
-  font-weight: 300;
-  padding: 0;
-  margin: 0;
-  align-items: flex-end;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.swiper-wrapper {
-  height: 100vh;
-  transition-timing-function:  cubic-bezier(1.000, 0.015, 0.810, 0.995);
-  box-sizing: border-box;
-}
-
-.swiper {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
 
 .mother {
   display: flex;
@@ -49,36 +13,7 @@
   justify-content: center;
 }
 
-.isheader {
-  position: fixed;
-  z-index: 999;
-  background-color: #2ADD5A;
-  display: flex;
-  flex-direction: row;
-}
 
-.sidenavs {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  z-index: 999;
-  background-color: #313131;
-  box-shadow: 6px 2px 12px #272727;
-  box-sizing: border-box;
-  border-right: 1px solid #313131;
-}
-
-.genflex-r {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  align-self: end;
-  box-sizing: border-box;
-  border-top: 2px solid #2ADD5A;
-  
-}
 
 .w20-80 {
   width: 20vw;
@@ -122,6 +57,10 @@ width: 100vw;
   background-color: #2ADD5A;
 }
 
+.bk-red {
+  background-color: #fe4a49;
+}
+
 .bdr-a {
   border-right: 8px solid #2ADD5A;
 }
@@ -144,7 +83,7 @@ width: 100vw;
 
 .h56px {
   height: 56px;
-  margin-bottom: -56px;
+
 }
 
 .per100hff {

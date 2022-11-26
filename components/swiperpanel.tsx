@@ -1,12 +1,12 @@
 import { A11y, Keyboard, Mousewheel } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Genflex from '../components/genflex'
-import Genflex2 from '../components/genlex2'
-import styles from './mystyles.module.css'
+import styles from './swiperpanel.module.css'
 
 import 'swiper/css';
 import 'swiper/css/keyboard';
 import 'swiper/css/mousewheel';
+import './swiperpanel.module.css'
 
 type Props = {
   preview?: boolean
