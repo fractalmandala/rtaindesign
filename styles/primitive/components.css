@@ -3,7 +3,7 @@
 .type0 button {
   background-color: #fe4a49;
   color: white;
-  transition: all 0.17s var(--snap);
+  transition: all 0.17s cubic-bezier(1.000, 0.020, 0.975, 0.250);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -73,7 +73,8 @@
 }
 
 .bdr-b {
-  border: 1px solid #474747;
+  border-left: 1px solid #474747;
+  border-right: 1px solid #474747;
 }
 
 

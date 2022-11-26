@@ -1,34 +1,16 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
+import posts from '../../posts.json'
 
-const Section = () => {
+export default () => {
   const router = useRouter()
-  const { rid }= router.query
+
+  const post = posts[router.query.id]
+  if (!post) return <p></p>
 
   return (
-    <div>
-      <h1>Section: {rid} </h1>
-    </div>
+    <>
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+    </>
   )
-}
-
-export default Section
-
-export async function getServerSideProps({params, req, res}) {
-  const response = await fetch(`http://localhost:3000/ridsections/section/${params.id}`)
-
-  if (!response.ok) {
-    res.writeHead(302, { Location: '/ridsections' })
-    res.end()
-    return {props: {}}
-  }
-
-  const {data} = await response.json()
-  
-  
-  if (data) {
-    return {
-      props: {note: data}
-    }
-  }
 }

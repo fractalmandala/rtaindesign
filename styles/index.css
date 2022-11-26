@@ -5,6 +5,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -15,15 +17,29 @@ a {
 
 }
 
+.bk-black {
+  background-color: #242424;
+}
+
+.mother {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  
+}
+
 
 .swiper-slide { 
-  width: 100vw; 
+  width: 80vw; 
+  margin-left: 10vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #ffffff;
   color: #272727;
   font-weight: 300;
-  margin: 0;
   padding: 0;
 }
 
@@ -46,7 +62,6 @@ a {
 .headerkind {
   width: 100vw;
   height: 48px;
-  border-bottom: 1px solid #474747;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,6 +84,10 @@ a {
   display: none;
 }
 
+.sticks {
+  position: fixed;
+}
+
 .hide {
   opacity: 0;
 }
@@ -79,6 +98,14 @@ ul, li, ol {
 
 .bdr {
   border: 1px solid red;
+}
+
+.bdy {
+   border: 1px solid yellow;
+}
+
+.bd-r {
+  border-right: 1px solid #313131;
 }
 
 :root {
@@ -108,6 +135,7 @@ BOXES
   margin: 0;
   padding: 0;
   flex-direction: column;
+  margin-bottom: 4px solid #53dd6c;
 }
 
 
@@ -119,6 +147,13 @@ BOXES
   padding: 2.8rem;
 }
 
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  height: 80vh;
+  z-index: 999;
+}
 
 
 .cell {
@@ -218,7 +253,7 @@ STYLERS
 ****************************************************************************************************************/
 
 .ff {
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
 }
 

@@ -13,6 +13,8 @@ import '../styles/index.css'
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
   <NextUIProvider>
+    <div className="mother bk-black">
+    <div className="sidenav bk-black bd-r sticks">test</div>
      <Swiper
       // install Swiper modules
       modules={[A11y, Keyboard, Mousewheel]}
@@ -28,25 +30,25 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <div className="genfle-r bb-g ff cc bk-white bdr-b">
+        <div className="genflex-r bb-g ff cc bk-black">
           <Component {...pageProps} />
           </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex-r ff cc bk-white bdr-b">
+      <div className="genflex-r ff cc bk-black bdr-b">
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex-r ff cc bk-white bdr-b">
+      <div className="genflex-r ff cc bk-black bdr-b">
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="genflex-r ff cc bk-white bdr-b">
+      <div className="genflex-r ff cc bk-black bdr-b">
         </div>
       </SwiperSlide>
       ...
     </Swiper>
-  
+    </div>
   
 </NextUIProvider>
   )
