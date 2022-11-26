@@ -1,13 +1,19 @@
 import Link from 'next/link'
+import styles from './mystyles.module.css'
 
-const Header = () => {
+type Props = {
+  preview?: boolean
+  children: React.ReactNode
+}
+
+const Header =  ({ preview, children }: Props) => {
   return (
-    <h1>
-      <Link href="/" className="hover:underline">
-        Ṛta in Design
-      </Link>
-    </h1>
+    <div className="h56px wff bk-green isheader">
+      {children}
+    </div>
   )
 }
 
 export default Header
+
+

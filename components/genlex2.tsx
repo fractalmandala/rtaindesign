@@ -1,3 +1,4 @@
+
 import styles from './mystyles.module.css'
 
 type Props = {
@@ -5,14 +6,14 @@ type Props = {
   children: React.ReactNode
 }
 
-const Sidenav = ({ preview, children }: Props) => {
+const Genflex2 = ({ preview, children }: Props) => {
   return (
     <>
-    <div className="sidenavs w20-80 bk-black">
+    <div className="genflex-r ff100 cc bk-green bdr-a">
     {children}
     </div>
     </>
   )
 }
 
-export default Sidenav
+export default Genflex2

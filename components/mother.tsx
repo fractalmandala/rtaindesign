@@ -1,5 +1,6 @@
 import styles from './mystyles.module.css'
 
+
 type Props = {
   preview?: boolean
   children: React.ReactNode
@@ -8,6 +9,7 @@ type Props = {
 const Mother = ({ preview, children }: Props) => {
   return (
     <>
+    
     <div className="mother bk-black">
       {children}
     </div>
