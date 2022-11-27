@@ -5,6 +5,10 @@
   color: white;
 }
 
+a {
+  color: inherit;
+}
+
 
 .swiper-slide { 
   width: 100vw; 
@@ -33,10 +37,11 @@
 .mother {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   margin: 0;
   padding: 0;
+  
 
   background-color: #171717;
 }
@@ -256,6 +261,16 @@ width: 100vw;
   text-transform: capitalize;
   transition: all 0.25s ease-in;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
   line-height: 1rem;
+  transform: translatex(-80px);
+}
+
+.isheader:hover {
+  box-shadow: 4px 4px 8px #060606 inset, -4px -5px 9px #020303;
+
+}
+
+.isheader:hover a {
+  transform: translatex(0px);
 }

@@ -1,4 +1,5 @@
 import styles from './sidenav.module.css'
+import Link from 'next/link'
 
 type Props = {
   preview?: boolean
@@ -19,7 +20,7 @@ const Sidenav = ({ preview, children }: Props) => {
       <p>Fractal Maṇḍala</p>
       <small id="line6">About</small>
       <small id="line7">Documentation</small>
-      <small id="line8">Playground</small>
+      <small id="line8"><Link href="/fetching">Playground</Link></small>
       <small id="line9">Current Status</small>
     {children}
     </div>

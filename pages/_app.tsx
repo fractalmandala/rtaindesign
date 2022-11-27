@@ -15,45 +15,11 @@ import '../styles/newstyles.css'
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
   <NextUIProvider>
-    <Mother>
+   <Mother>
     <Header></Header>
     <Sidenav> </Sidenav>
-     <Swiper
-      // install Swiper modules
-      modules={[A11y, Keyboard, Mousewheel]}
-      spaceBetween={0}
-      slidesPerView={1}
-      loop={true}
-      speed={600}
-      keyboard={{
-        enabled: true,
-      }}
-      mousewheel={true}
-      direction={"vertical"}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>
-        <div className="genflex-r w80-100 cc bk-black bdr-a">
-          <div className="genflex W50-100 typea"></div>
-          <div className="genflex W50-100 typeb"></div>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-      <div className="genflex-r w80-100 cc bk-black bdr-b">
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-      <div className="genflex-r w80-100 cc bk-black bdr-c">
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-      <div className="genflex-r w80-100 cc bk-black bdr-d">
-        </div>
-      </SwiperSlide>
-     
-    </Swiper>
-    </Mother>
+      <Component {...pageProps} />
+      </Mother>
 </NextUIProvider>
   )
 }

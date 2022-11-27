@@ -1,7 +1,4 @@
-
-import MySwiper from './swiperpanel'
-import Header from './header'
-import Sidenav from './sidenav'
+import './mystyles.module.css'
 
 type Props = {
   preview?: boolean
@@ -11,11 +8,10 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-   <Header></Header>
-   <Sidenav> </Sidenav>
-    <MySwiper> 
+ 
+    <div className="bk-black ff">
     {children}
-    </MySwiper>
+    </div>
   
     </>
   )
