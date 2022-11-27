@@ -1,6 +1,4 @@
-import { Inter_Tight } from "@next/font/google"
-import Image from 'next/legacy/image'
-import Mother from './mother'
+
 import MySwiper from './swiperpanel'
 import Header from './header'
 import Sidenav from './sidenav'

@@ -1,4 +1,4 @@
-import styles from './mother.module.css'
+
 
 type Props = {
   preview?: boolean
