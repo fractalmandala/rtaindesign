@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout'
 
 type Props = {
@@ -9,7 +8,9 @@ type Props = {
 export default function Home({children,preview}: Props) {
   return (
     <>
-<Layout> {children} </Layout>
+    <Layout>
+{children}
+</Layout>
     </>
   )
 }
