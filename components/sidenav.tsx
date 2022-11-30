@@ -12,7 +12,7 @@ const Sidenav = ({ preview, children }: Props) => {
     <div className={styles.sidenav}>
       <p><Link href='/documents'>Documents</Link></p>
       <small id={styles.line1}><Link href='/documents/agnipurana'>Agni Purāṇa</Link></small>
-      <small id={styles.line2}>The Scaffolding in Brief</small>
+      <small id={styles.line2}><Link href='/fetching'>Fetching Area</Link></small>
       <small id={styles.line3}>Principles of Design</small>
       <small id={styles.line4}>The Design Being</small>
       <small id={styles.line5}>Svataḥ Siddha</small>
