@@ -16,6 +16,7 @@ const Layout = ({ preview, children }: Props) => {
       <div className={styles.iscontain}>
       <Sidenav> </Sidenav>
       <div className={styles.box}>
+        okay
       {children}
       </div>
       </div>
