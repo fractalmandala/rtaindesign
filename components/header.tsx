@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <div className={styles.isheader}>
-<Link href="/">HOME</Link>
+<Link href="/">the Repository of Scripture</Link>
     </div>
   )
 }

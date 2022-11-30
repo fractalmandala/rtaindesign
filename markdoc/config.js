@@ -1,4 +1,4 @@
-// markdoc/config.js
+
 
 import tags from './tags';
 import nodes from './nodes';
