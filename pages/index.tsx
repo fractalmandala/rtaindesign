@@ -1,19 +1,28 @@
 import Layout from '../components/layout'
+import getSortedPostsData from '../lib/posts'
 import Link from 'next/link'
 
-
-type Props = {
-  preview?: boolean
-  children: React.ReactNode
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    }
+  }
 }
 
-export default function Home({children,preview}: Props) {
+export default function Home ({allPostsData}) {
   return (
-    <>
     <Layout>
-okay
-</Layout>
-    </>
+      <ul>
+          {allPostsData.map(({ id, title }) => (
+            <li key={id}>
+              {title}
+              {id}
+            </li>
+          ))}
+        </ul>
+    </Layout>
   )
 }
 

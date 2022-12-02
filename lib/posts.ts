@@ -2,9 +2,9 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = path.join(process.cwd(), 'posts');
+const postsDirectory = path.join(process.cwd(), 'repository');
 
-export function getSortedPostsData() {
+export default function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '');
@@ -16,4 +16,7 @@ export function getSortedPostsData() {
       ...matterResult.data,
     };
   });
+
+  return allPostsData
 }
+

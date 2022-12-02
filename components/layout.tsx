@@ -10,17 +10,17 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
- 
+  <body className={styles.bod}>
     <div className={styles.layout}>
       <Header></Header>
       <div className={styles.iscontain}>
       <Sidenav> </Sidenav>
       <div className={styles.box}>
-       
       {children}
       </div>
       </div>
     </div>
+    </body>
     </>
   )
 }

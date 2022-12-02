@@ -23,6 +23,12 @@ a {
   color: inherit;
 }
 
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .swiper-slide { 
   width: 100vw; 
   height: 100vh;
