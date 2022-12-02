@@ -7,9 +7,10 @@
   height: 100%;
   background-color: #ffffff;
   color: #272727;
-  font-family: 'Readex Pro',sans-serif;
+  font-family: 'Inter Tight',sans-serif;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .iscontain {
@@ -17,6 +18,7 @@
   flex-direction: row;
   width: 100vw;
   height: calc(100vh-56px);
+  box-sizing: border-box;
 }
 
 .box {
@@ -24,4 +26,7 @@
   height: 100vh;
   display: flex;
   color: #272727;
+  margin-left: 32vw;
+  margin-top: 24vh;
+  box-sizing: border-box;
 }

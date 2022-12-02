@@ -1,4 +1,5 @@
 import '../styles/newstyles.css'
+import Layout from '../components/layout'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -9,7 +10,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bod">
+        <Layout>
+        {children}
+        </Layout>
+        </body>
     </html>
   );
 }

@@ -42,3 +42,5 @@ function renderData(data) {
     // display.appendChild(card);
   }
 }
+
+export default renderData

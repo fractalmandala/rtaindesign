@@ -11,7 +11,7 @@ export default function Home({children,preview}: Props) {
   return (
     <>
     <Layout>
-{children}
+okay
 </Layout>
     </>
   )
