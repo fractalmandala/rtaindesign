@@ -10,10 +10,6 @@ const Sidenav = ({ preview, children }: Props) => {
   return (
     <>
     <div className={styles.sidenav}>
-      <p><Link href='/'>Home</Link></p>
-      <small id={styles.line1}><Link href='/repository/anuttarastika'>Anuttaraṣṭikā</Link></small>
-      <small id={styles.line1}><Link href='/repository/nirukta'>Nirukta</Link></small>
-      <small id={styles.line2}><Link href='/repository/vakyapadiya'>Vākyapadīya</Link></small>
     {children}
     </div>
     </>

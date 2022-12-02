@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mother {
+  display: flex;
+  margin: 0;
+  padding: 128px 32px 128px 32px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.mother li {
+  font-family: 'Inter Tight',sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2rem;
+  transition: all 0.3s ease-out;
+  width: max-content;
+  transform-origin: center left;
+}
+
+.mother li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.mother li a:hover {
+  color: white;
+}
+
+.mother li:hover {
+  transform: scale(0.9);
+  box-shadow: 3px 4px 8px #212121;
+}
+
+.mother li a::after {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  content: '';
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #53dd6c;
+}
+
+.mother li a:hover::after {
+  animation: headingline 0.17s ease-out forwards;
+}
+
+@keyframes headingline {
+  0% {
+    width: 0%;
+    margin-left: 50%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.mother ul {
+  height: 560px;
+  overflow-y: scroll;
+  list-style-type: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mother ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mother ul::-webkit-scrollbar-thumb:hover {
+  background: #53dd6c; 
+}
+
+.child {
+  width: 75vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 769px) {
+  .mother {
+    flex-direction: row;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .mother {
+    flex-direction: column;
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: Agniveśa - Carakasaṃhitā-parts with the Āyurvedadīpikā
+title: Agniveśa - Carakasaṃhitā-parts
 ---
 
 # Header

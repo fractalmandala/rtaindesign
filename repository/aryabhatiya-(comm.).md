@@ -1,5 +1,5 @@
 ---
-title: Āryabhaṭīya with Commentary of Bhāskara I and Someśvara
+title: Āryabhaṭīya with Commentary
 ---
 
 

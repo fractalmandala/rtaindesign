@@ -1,5 +1,5 @@
 ---
-title: Brahmasūtra with Śaṃkara's Śārīrakamīmāṃsābhāṣya
+title: Brahmasūtra with Commentary
 ---
 
 # Header

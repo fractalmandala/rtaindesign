@@ -1,5 +1,5 @@
 ---
-title: Brahmasūtra2 with Govindānanda's Ratnaprabhāvyākhyā
+title: Brahmasūtra 2 with Commentary
 ---
 
 

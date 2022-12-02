@@ -1,4 +1,4 @@
-import './genflex.module.css'
+import styles from './modules/mother.module.css'
 
 type Props = {
   preview?: boolean
@@ -8,7 +8,7 @@ type Props = {
 const Genflex = ({ preview, children }: Props) => {
   return (
     <>
-    <div className="genflex-r cc">
+    <div className={styles.child}>
     {children}
     </div>
     </>

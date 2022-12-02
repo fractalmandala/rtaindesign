@@ -1,4 +1,4 @@
-
+import styles from './modules/mother.module.css'
 
 type Props = {
   preview?: boolean
@@ -9,7 +9,7 @@ const Mother = ({ preview, children }: Props) => {
   return (
     <>
     
-    <div className="mother">
+    <div className={styles.mother}>
       {children}
     </div>
     </>
