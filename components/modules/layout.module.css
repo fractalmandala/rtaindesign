@@ -32,12 +32,12 @@
 }
 
 .box {
-  width: 80vw;
+  width: 48vw;
   height: 100vh;
   display: flex;
   color: #272727;
-  margin-left: 32vw;
-  margin-top: 24vh;
+  margin-left: 28vw;
+  margin-top: 20vh;
   box-sizing: border-box;
 }
 
@@ -45,4 +45,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .box {
+    width: 60vw;
+    margin-left: 34vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .box {
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 1.2rem;
+    box-sizing: border-box;
+  }
 }

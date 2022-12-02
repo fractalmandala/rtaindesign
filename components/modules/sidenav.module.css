@@ -21,15 +21,15 @@
 
 .sidenav p {
   font-family: 'Inter Tight',sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   opacity: 1;
   color: #474747;
   text-transform: capitalize;
   transition: all 0.25s ease-in;
   position: relative;
   padding: 4px 0;
-  line-height: 1.5rem;
+  line-height: 1.64rem;
   margin: 0;
 }
 
@@ -57,7 +57,8 @@
 .sidenav small {
   text-transform: capitalize;
   font-family: 'inter tight',sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.44rem;
   font-weight: 300;
   margin: 0 0 4px 0; 
   cursor: pointer;
@@ -66,4 +67,16 @@
 
 .sidenav small:hover {
   color: #ff3d00;
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .sidenav {
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .sidenav {
+    display: none;
+  }
 }

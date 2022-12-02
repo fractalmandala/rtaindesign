@@ -9,8 +9,6 @@ type Props = {
 
 const Layout = ({ preview, children }: Props) => {
   return (
-    <>
-  <body className={styles.bod}>
     <div className={styles.layout}>
       <Header></Header>
       <div className={styles.iscontain}>
@@ -20,8 +18,6 @@ const Layout = ({ preview, children }: Props) => {
       </div>
       </div>
     </div>
-    </body>
-    </>
   )
 }
 

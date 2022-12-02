@@ -1,46 +1,7 @@
-Yāska: Nirukta
+---
+title: 'Nirukta'
+---
 
-
-# Header
-
-  This file is a plain text transformation of http://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_yAska-nirukta.xml
-  with a rudimentary header. For a more extensive header please refer to the source file.
-
-## Data entry: Munoe Tokunaga (and partly M. Kobayashi)
-## Contribution: Munoe Tokunaga (and partly M. Kobayashi)
-## Date of this version: 2020-07-31
-
-## Source: 
-   - Lakshman Sarup.
-
-## Publisher: Göttingen Register of Electronic Texts in Indian Languages (GRETIL), SUB Göttingen
-
-## Licence:
-   This e-text was provided to GRETIL in good faith that no copyright rights have been infringed. If anyone wishes to assert copyright over this file, please contact the GRETIL management at gretil(at)sub(dot)uni-goettingen(dot)de. The file will be immediately removed pending resolution of the claim.
-   Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-
-## Structure of references:
-   A reference is assembled consisting of
-   - a pragmatic abbreviation of the title: Nirukta = ,
-   - the number of the  in arabic numerals,
-   - the number of the verse in arabic numerals.
-
-## Notes:
-   This file has been created by mass conversion of GRETIL's Sanskrit corpus from niruktau.htm. Due to the heterogeneity of the sources the header markup might be suboptimal. For the sake of transparency the header of the legacy file is documented in the note element below:
-
-   
-	 Yaska: Nirukta
-Based on the edition by Lakshman Sarup
-Input by Munoe Tokunaga (and partly M. Kobayashi)
-29.7.1999
-	
-
-
-## Revisions:
-   - 2020-07-31: TEI encoding by mass conversion of GRETIL's Sanskrit corpus
-
-
-# Text
 
 1,1: samāmnāyaḥ.samāmnātaḥ.sa.vyākhyātavyaḥ 1,1: tam.imam.samāmnāyam.nighaṇṭava.ity.ācakṣate 1,1: nighaṇṭavaḥ.kasmān.nigamā.ime.bhavanti 1,1: chandobhyaḥ.samāhṛtya.samāhṛtya.(samāhatya.ṛ).samāmnātāḥ 1,1: te.nigantava.eva.santo.nigamanān.nighaṇṭava.ucyanta.ity.aupamanyavaḥ 1,1: api.vā.hananād.eva.syuḥ.samāhatā.bhavanti 1,1: yad.vā.samāhṛtā.bhavanti 1,1: tad.yāny.[etāni.bh].catvāri.pada.jātāni.nāma.ākhyāte.ca.upasarga.nipātāś.ca.tāni.imāni.bhavanti 1,1: tatra.etan.nāma.ākhyātayor.lakṣaṇam.pradiśanti 1,1: bhāva.pradhānam.ākhyātam.sattva.pradhānāni.nāmāni 1,1: tad.yatra.ubhe.bhāva.pradhāne.bhavataḥ 1,1: pūrva.aparī.bhūtam.bhāvam.ākhyātena.ācaṣṭe.vrajati.pacati.iti 1,1: upakrama.prabhṛty.apavarga.paryantam.mūrtam.sattva.bhūtam.sattva.nāmabhir.vrajyā.paktir.iti 1,1: ada.iti.sattvānām.upadeśo.gaur.aśvaḥ.puruṣo.hastī.iti 1,1: bhavati.iti.bhāvasya.āste.śete.vrajati.tiṣṭhati.iti 1,1: indriya.nityam.vacanam.audumbarāyaṇaḥ
 
