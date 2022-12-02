@@ -17,8 +17,8 @@ export default function Home ({allPostsData}) {
       <ul>
           {allPostsData.map(({ id, title }) => (
             <li key={id}>
-              {title}
-              {id}
+              <Link href={`/repository/${id}`}>{title}</Link>
+              
             </li>
           ))}
         </ul>
