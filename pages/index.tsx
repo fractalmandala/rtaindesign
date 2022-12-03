@@ -5,6 +5,7 @@ import Header from '../components/header'
 import Mother from '../components/mother'
 import Sidenav from '../components/sidenav'
 import Genflex from '../components/genflex'
+import Search from '../components/search'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -29,7 +30,8 @@ export default function Home ({allPostsData}) {
               ))}
             </ul>
             </Sidenav>
-            <Genflex> </Genflex>
+            <Genflex>
+             </Genflex>
           </Mother>
           </Layout>        
   )
