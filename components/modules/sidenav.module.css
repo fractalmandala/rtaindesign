@@ -11,3 +11,9 @@
   border-right:1px solid #414141;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 414px) {
+  .sidenav {
+    width: 100vw;
+  }
+}
