@@ -4,30 +4,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Readex Pro',sans-serif;
-  color: #272727;
 }
 
 .bod {
   margin: 0;
-}
-
-div {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #272727;
-  background-color: #ffffff;
-}
-
-a {
-  color: inherit;
-}
-
-ul, ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .swiper-slide { 
@@ -52,27 +32,6 @@ ul, ol {
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-.mother {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  background-color: #171717;
-}
-
-
-.genflex-r {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  align-self: end;
-
-  
 }
 
 .w20-80 {
@@ -125,17 +84,6 @@ width: 100vw;
   border-right: 8px solid #FF3232;
 }
 
-
-p {
-  font-size: 20px;
-  line-height: 1.25;
-  margin: 0.5rem 0 .75rem 0;
-  font-family: 'Stix Two Text',serif;
-}
-
-@keyframes forwardline {
-  from { width: 0%; } to { width: 100%; }
-}
 
 cite {
   font-size: 12px;
@@ -209,7 +157,6 @@ h1 {
   h4 {font-size: 1.6rem; width: 100%;}
 
 }
-
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
 

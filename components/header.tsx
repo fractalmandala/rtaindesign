@@ -10,8 +10,9 @@ export default function Header() {
 <Link href="/">Bṛhat Open Library</Link>
 </div>
 <div className={styles.other}>
-<Link href="#">Documentation</Link>
+<Link href="/docs/documentation">Documentation</Link>
 <Link href="#">References</Link>
+<Link href="#">Guide</Link>
 <Link href="#">About</Link>
 </div>
     </div>

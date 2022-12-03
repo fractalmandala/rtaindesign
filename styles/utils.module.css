@@ -12,10 +12,12 @@
 .heading1 {
   font-family: 'STIx two text',serif;
   text-transform: capitalize;
-  font-size: 88px;
-  font-weight: 900;
+  font-size: 56px;
+  line-height: 1.125em;
+  font-weight: 600;
   letter-spacing: -2px;
   margin-bottom: 32px;
+  word-break: break-word;
 }
 
 .reader h1 {
@@ -27,7 +29,7 @@
   font-family: 'Inter Tight',sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: #878787;
+  color: white;
   display: none;
 }
 
@@ -60,8 +62,9 @@
 
 .reader p {
   font-family: 'Stix two text',serif;
-  color: #474747;
-  font-size: 23px;
+  color: white;
+  font-size: 21px;
+  letter-spacing: 0;
   margin: 20px 0 4px 0;
   padding: 0;
 }
@@ -69,6 +72,61 @@
 #begin {
   font-family: 'Inter Tight',sans-serif;
   font-size: 15px;
+}
+
+.normheading {
+  font-family: 'Inter Tight',sans-serif;
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  color: #10c56d;
+  margin-bottom: 16px;
+}
+
+.normbody p {
+  font-family: 'Inter Tight',sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.48em;
+  letter-spacing: 0;
+}
+
+.normbody a {
+  color: #53dd6c;
+}
+
+.normbody h5 {
+  font-family: 'Inter Tight',sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+  position: relative;
+}
+
+.normbody h5:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  margin-left: -20px;
+  margin-top: 8px;
+  height: 8px;
+  border-radius: 4px;
+  content: '';
+  background-color: #10c56d;
+}
+
+.normbody ol, .normbody li {
+  color: white;
+}
+
+.normbody ol.d {
+  list-style-type: lower-alpha;
+}
+
+.normbody hr {
+  background: #414141;
+  width: 56%;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 415px) and (max-width: 768px) {

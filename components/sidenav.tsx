@@ -1,4 +1,5 @@
 import styles from './modules/sidenav.module.css'
+import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
 
 type Props = {

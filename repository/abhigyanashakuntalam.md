@@ -2,51 +2,20 @@
 title: Kālidāsa - Abhijñānaśakuntala
 ---
 
-# Header
-
-  This file is a plain text transformation of http://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_kAlidAsa-abhijJAnazakuntala.xml
-  with a rudimentary header. For a more extensive header please refer to the source file.
 
 ## Data entry: Muneo Tokunaga
 ## Contribution: Muneo Tokunaga
 ## Date of this version: 2020-07-31
 
-## Source: 
-   - Kale: M.R. Kale, Bombay 1898 (ninth ed. 1961).
+## Source - Kale: M.R. Kale, Bombay 1898 (ninth ed. 1961).
 
 ## Publisher: Göttingen Register of Electronic Texts in Indian Languages (GRETIL), SUB Göttingen
 
-## Licence:
-   This e-text was provided to GRETIL in good faith that no copyright rights have been infringed. If anyone wishes to assert copyright over this file, please contact the GRETIL management at gretil(at)sub(dot)uni-goettingen(dot)de. The file will be immediately removed pending resolution of the claim.
-   Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+## Licence: This e-text was provided to GRETIL in good faith that no copyright rights have been infringed. If anyone wishes to assert copyright over this file, please contact the GRETIL management at gretil(at)sub(dot)uni-goettingen(dot)de. The file will be immediately removed pending resolution of the claim. Distributed under a Creative Commons. Attribution-NonCommercial-ShareAlike 4.0 International License.
 
-## Structure of references:
-   A reference is assembled consisting of
-   - a pragmatic abbreviation of the title: Abhijñānaśakuntala = KSak,
-   - the number of the  in arabic numerals,
-   - the number of the verse in arabic numerals.
+## Notes: This file has been created by mass conversion of GRETIL's Sanskrit corpus from ksakunau.htm. Due to the heterogeneity of the sources the header markup might be suboptimal. For the sake of transparency the header of the legacy file is documented in the note element below:
 
-## Notes:
-   This file has been created by mass conversion of GRETIL's Sanskrit corpus from ksakunau.htm. Due to the heterogeneity of the sources the header markup might be suboptimal. For the sake of transparency the header of the legacy file is documented in the note element below:
-
-   
-	 Kalidasa: Abhijnanasakuntalam
-Based on the edition by M.R. Kale, Bombay 1898 (ninth ed. 1961)
-Input by Muneo Tokunaga
-Input finished on July 26, 1999
-[The text is not proofread]
-ANALYTIC TEXT (BHELA conventions)
-	
-
-
-## Revisions:
-   - 2020-07-31: TEI encoding by mass conversion of GRETIL's Sanskrit corpus
-
-
-# Text
-
-
-athā7bhijñāna-śākuntalam /
+## Revisions: 2020-07-31: TEI encoding by mass conversion of GRETIL's Sanskrit corpus
 
 
 prathamo 'ṅkaḥ --
