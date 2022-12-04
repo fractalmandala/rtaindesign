@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+.normbody, .normheading {
+  --prim: #53dd6c;
+}
 
 .reader {
   display: flex;
@@ -76,22 +81,20 @@
 
 .normheading {
   font-family: 'Inter Tight',sans-serif;
-  font-size: 32px;
-  color: white;
-  font-weight: bold;
-  color: #10c56d;
+  font-weight: 500;
+  color: var(--prim);
   margin-bottom: 16px;
 }
 
 .normbody p {
   font-family: 'Inter Tight',sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.48em;
-  letter-spacing: 0;
+  line-height: 1.4em;
+  letter-spacing: 0.2px;
+  font-weight: 400;
 }
 
 .normbody a {
-  color: #53dd6c;
+  color: var(--prim);
 }
 
 .normbody h5 {
@@ -112,7 +115,18 @@
   height: 8px;
   border-radius: 4px;
   content: '';
-  background-color: #10c56d;
+  background-color: var(--prim);
+}
+
+.normbody h4 {
+  font-family: 'Inter Tight',sans-serif;
+  color: #878787;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.normbody code {
+  font-family: 'JetBrains Mono';
 }
 
 .normbody ol, .normbody li {
@@ -129,7 +143,50 @@
   margin-top: 20px;
 }
 
+.normbody blockquote {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 769px) {
+  
+  .normheading {
+    font-size: 2.4rem;
+  }
+
+  .normbody p {
+    font-size: 15px;
+  }
+
+  .normbody h4 {
+    font-size: 1.48rem;
+    margin-top: 32px;
+  }
+
+  .normbody code {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    line-height: 0.5em;
+  }
+
+  .normbody blockquote {
+    margin: 24px 88px 24px 32px;
+    padding: 2px 32px 2px 32px;
+    border-left: 2px solid var(--prim);
+    border-radius: 4px;
+    box-shadow: 4px 2px 5px #191919 inset;
+    background-color: #212121;
+    line-height: 0.5em;
+  }
+
+}
+
 @media screen and (min-width: 415px) and (max-width: 768px) {
+  
+  .normheading {
+    font-size: 2.1rem;
+  }
+  
   .heading1 {
     font-size: 56px;
   }
@@ -137,9 +194,15 @@
   .reader p {
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-width: 414px) {
+  
+  .normheading {
+    font-size: 2rem;
+  }
+  
   .heading1 {
     font-size: 48px;
   }
@@ -147,4 +210,5 @@
   .reader p {
     font-size: 18px;
   }
+
 }
