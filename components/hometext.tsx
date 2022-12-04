@@ -11,8 +11,8 @@ export default function Hometext() {
  </div>
  
  <p>Welcome to the Bṛhat Open Library - a tool for reinstallation of base operating code.<br></br>
- It is an open-access, open-source repository for scriptures, texts, papers, books and other material, all related to Bhārata, Itihāsa and Dharma.<br></br><br></br>
- To cut through the clutter and find your own way around, click on any of the text listed here and take it from there.<br></br><br></br>
+ An open-access, open-source repository for scriptures, texts, papers, books and other material, all related to Bhārata, Itihāsa and Dharma.<br></br><br></br>
+ To cut through the clutter and find your own way around, click on any of the texts listed here and take it from there. To establish synaptic reconnection to the civilizational consciousness is, after all, *your* journey.<br></br><br></br>
  For a detailed and complete guide on how to use the Open Library to reconnect with the Indian civilizational consciousness, read our 'User Guide'. You are currently in the 'Repository of Scripture' sub-section of the Open Library. Return to the main section here. More about the library is available here, and our parent website for Bṛhat is here.<br></br><br></br>
  <span className="col-g">This build is currently a work-in-progress. Expect broken/dead links and/or errors.</span></p>
  </>

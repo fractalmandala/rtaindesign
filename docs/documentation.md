@@ -2,6 +2,8 @@
 title: Documentation
 ---
 
+###### Date: 4th Dec 2023
+
 This documentation details the technical specifications, key standards, sources, code and build process of the Bṛhat Open Library. The Open Library's PDF collection and readers can be accessed at [this link.](https://brhat.in/bol) To know more about Bṛhat and explore other projects, visit our [main website.](https://brhat.in)
 
 If you only need to use the Open Library to view, research and read, please see our [User Guide](#) instead. The steps given here will allow you to build *your own repository* from scratch. This is in line with our principle of free and open-source. 

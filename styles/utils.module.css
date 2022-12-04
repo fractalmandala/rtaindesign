@@ -84,7 +84,7 @@
   font-family: 'Inter Tight',sans-serif;
   font-weight: 500;
   color: var(--grey);
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .normbody p {
@@ -98,6 +98,10 @@
 }
 
 .normbody a {
+  color: var(--prim);
+}
+
+.normbody h6 {
   color: var(--prim);
 }
 

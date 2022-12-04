@@ -14,7 +14,7 @@
   color: inherit;
   text-decoration: inherit;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 @media screen and (min-width: 900px) {
