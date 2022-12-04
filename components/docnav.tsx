@@ -1,5 +1,4 @@
 import styles from './modules/sidenav.module.css'
-import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
 
 type Props = {
@@ -7,14 +6,14 @@ type Props = {
   children: React.ReactNode
 }
 
-const Sidenav = ({ preview, children }: Props) => {
+const Docnav = ({ preview, children }: Props) => {
   return (
     <>
     <div className={styles.sidenav}>
-    <Link href="/texts/mimamsasutra">Mīmāṃsasūtra</Link>
+    <Link href="/docs/documentation">Documentation</Link>
     </div>
     </>
   )
 }
 
-export default Sidenav
+export default Docnav

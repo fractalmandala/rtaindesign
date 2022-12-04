@@ -19,16 +19,8 @@ export default function Home ({allPostsData}) {
   return (
           <Layout>
             <Header></Header>
+            <Sidenav> </Sidenav>
             <Mother>
-            <Sidenav>
-            <ul>
-              {allPostsData.map(({ id, title }) => (
-                <li key={id}>
-                  <Link href={`/repository/${id}`}>{title}</Link>
-                </li>
-              ))}
-            </ul>
-            </Sidenav>
             <Genflex>
               <div className="gen-h">
               <h5>Reality is made up of language, or code.<br></br>

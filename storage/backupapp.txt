@@ -58,3 +58,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 </NextUIProvider>
   )
 }
+
+
+<Sidenav>
+            <ul>
+              {allPostsData.map(({ id, title }) => (
+                <li key={id}>
+                  <Link href={`/repository/${id}`}>{title}</Link>
+                </li>
+              ))}
+            </ul>
+            </Sidenav>

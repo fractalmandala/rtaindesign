@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Header from '../../components/header'
 import Mother from '../../components/mother'
-import Sidenav from '../../components/sidenav'
+import Docnav from '../../components/docnav'
 import Genflex from '../../components/genflex'
 import { getAllDocIds, getDocData } from '../../lib/docs'
 import utilStyles from '../../styles/utils.module.css';
@@ -14,8 +14,9 @@ export default function Doc({ docData }) {
         <title className={utilStyles.titular}>{docData.title}</title>
       </Head>
       <Header></Header>
+            
+            <Docnav> </Docnav>
             <Mother>
-            <Sidenav> </Sidenav>
             <Genflex>
       <div className={utilStyles.normheading}>{docData.title}</div>
       <div className={utilStyles.normbody} dangerouslySetInnerHTML={{ __html: docData.contentHtml }} />
