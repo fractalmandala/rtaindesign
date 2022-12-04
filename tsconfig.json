@@ -32,5 +32,5 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ]
+, "scripts/neuron.js"  ]
 }

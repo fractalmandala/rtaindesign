@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+.col-g {
+  color: #53dd6c;
+}
+
 .bod {
   margin: 0;
 }
@@ -102,6 +106,14 @@ small {
   letter-spacing: 1px;
 }
 
+p {
+  letter-spacing: 0.5px;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 32px 0 0 0;
+  color: #d7d7d7;
+}
+
 h6 {
   font-size: 1.1rem;
   font-weight: 300;
@@ -111,11 +123,13 @@ h6 {
 }
 
 h5 {
-  font-size: 1.48rem;
-  font-weight: 600;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1.24;
   margin: 0.5rem 0 .75rem 0;
-  font-family: 'STIX Two Text',serif;
+  font-family: 'Inter Tight',serif;
+  letter-spacing: 0.5px;
+  border-left: 2px solid #53dd6c;
+  padding-left: 32px;
 }
 
 h4 {
@@ -151,9 +165,28 @@ h1 {
   font-family: 'STIX Two Text',serif;
 }
 
+.gen-h {
+  background-color: #212121;
+  box-sizing: border-box;
+  padding: 8px;
+
+}
+
+.gen-h h5 {
+  color: white;
+}
+
+@media screen and (min-width: 900px) {
+
+  p { font-size: 1rem;}
+  h5 { font-size: 1.32rem;}
+
+}
+
 @media screen and (max-width: 899px) and (min-width: 769px) {
 
   p { font-size: 1rem;}
+  h5 { font-size: 1.32rem;}
   h4 {font-size: 1.6rem; width: 100%;}
 
 }
@@ -164,7 +197,7 @@ h1 {
   h2 { font-size: 4rem; }
   h3 { font-size: 2.8rem; }
   h4 { font-size: 1.56rem; }
-  h5 { font-size: 1.4rem; }
+  h5 { font-size: 1.32rem; }
   h6 { font-size: 1rem; }
   p { font-size: 1rem; }
 
@@ -176,9 +209,9 @@ h1 {
  h2 { font-size: 2.4rem; }
  h3 { font-size: 2rem; }
  h4 { font-size: 1.32rem;}
- h5 { font-size: 1.25rem;}
+ h5 { font-size: 1.32rem;}
  h6 { font-size: 15px; }
- p { font-size: 15px; }
+ p { font-size: 1rem; }
  small { font-size: 12px; }
 
 }
