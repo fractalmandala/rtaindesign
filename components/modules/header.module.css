@@ -14,7 +14,7 @@
   padding: 0 32px;
   transition: all 0.2s ease-out;
   box-sizing: border-box;
-  background-color: #272727;
+  background: #272727;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
   height: 1px;
   content: '';
   margin-left: 50%;
-  border-top: 1px solid #53dd6c;
+  border-top: 1px solid #ff3d00;
 }
 
 .isheader:hover::after {
@@ -90,7 +90,7 @@
   content: '';
   top: 0;
   left: 0;
-  border-bottom: 1px solid #53dd6c;
+  border-bottom: 1px solid #ff3d00;
 }
 
 .other a:hover::after {

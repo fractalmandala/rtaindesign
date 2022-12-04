@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   width: 100vw;
-  background-color: #272727;
+  z-index: 2;
 }
 
 .fullfullcol {
@@ -13,6 +13,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding-top: 128px;
+  z-index: 2;
 }
 
 .mother li {
@@ -91,7 +92,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: #272727;
+  z-index: 2;
 }
 
 @media screen and (min-width: 900px) {
@@ -112,6 +113,10 @@
   padding-left: 4vw;
   padding-right: 10vw;
   margin-left: 24vw;
+}
+
+.child p {
+  width: 88%;
 }
 
 }
