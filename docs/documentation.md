@@ -11,7 +11,7 @@ If you only need to use the Open Library to view, research and read, please see 
 ---
 
 #### Contents:
-1. Overview
+1. Introduction
 2. Sources of Data
 3. [Text Parsing](/docs/documentation/#text-parsing)
 4. [Database and Storage](/docs/documentation/#database-and-storage)
@@ -20,6 +20,12 @@ If you only need to use the Open Library to view, research and read, please see 
 7. Links
 8. Development Roadmap
 9. Licenses
+
+#### Introduction
+
+First, the disclaimer - I am not a professional programmer or developer. For all the steps you find, there are certain to be better, more efficient ways to do them. But mine is a journey of learning by creation, and I begin with the cursory basics that I know. For example, there are quite a few ways to transfer a bucket of data from, say, XML format, to a Next/React front-end. But I know neither JS nor these frameworks (nor even the technical jargon entirely), so you'll find me doing the same with extra steps, routed through Google Sheets and Supabase. To know more about my background or about my organization, Bṛhat, visit the About section.
+
+Second, the constant learning curve means a frequently changing codebase. While I will endeavor to keep the documentation updated, in crunch times priority will be keeping the User Guide up to date over the build specs. You may find the details here to be different to what's identifiable at front-end. Do forgive me in such a case, and please reach out at amrit.pandey@brhat.in for any queries/suggestions/issues. 
 
 #### Text Parsing
 

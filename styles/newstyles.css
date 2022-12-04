@@ -148,27 +148,23 @@ h4 {
 }
 
 h3 {
-  font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
   font-family: 'Inter Tight',sans-serif;
 }
 
 h2 {
-  font-size: 4.8rem;
-  font-weight: 900;
+  font-weight: 200;
   line-height: 1;
   margin: 0.5rem 0 .75rem 0;
   font-family: 'Inter Tight',sans-serif;
 }
 
 h1 {
-  font-size: 80px;
-  font-weight: 700;
+
   line-height: 1;
   text-transform: uppercase;
-  margin: 0.5rem 0 .75rem 0;
   font-family: 'Inter Tight',sans-serif;
 }
 
@@ -183,11 +179,37 @@ h1 {
   color: white;
 }
 
+.titler {
+  background-color: #212121;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  border-right: 2px solid #53dd6c;
+  transition: all 0.16s ease-in;
+}
+
+
 @media screen and (min-width: 900px) {
 
   p { font-size: 1rem;}
   h5 { font-size: 1.32rem;}
   h6 { font-size: 12px;}
+  h3 {
+    font-size: 3.2rem;
+  }
+  h1 {
+      font-size: 80px;
+      font-weight: 700;
+      margin: 0.5rem 0 .75rem 0;
+  }
+  .titler {
+    width: max-content;
+    padding: 16px 32px;
+    box-shadow: 6px 5px 12px #171717;
+  }
+
+  .titler:hover {
+    box-shadow: 6px 5px 12px #171717 inset;
+  }
 
 }
 
@@ -197,30 +219,71 @@ h1 {
   h5 { font-size: 1.32rem;}
   h4 {font-size: 1.6rem; width: 100%;}
   h6 { font-size: 12px;}
+  h3 {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0.5rem 0 .75rem 0;
+}
+
+  .titler {
+    width: max-content;
+    padding: 16px 32px;
+    box-shadow: 6px 5px 12px #171717;
+  }
+
+  .titler:hover {
+    box-shadow: 6px 5px 12px #171717 inset;
+  }
 
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
 
-  h1 { font-size: 6.4rem; }
+  h1 { 
+    font-size: 48px;
+    margin: 0.5rem 0 .75rem 0;
+  }
   h2 { font-size: 4rem; }
-  h3 { font-size: 2.8rem; }
+  h3 { font-size: 24px; }
   h4 { font-size: 1.56rem; }
   h5 { font-size: 1.32rem; }
   p { font-size: 1rem; }
   h6 { font-size: 12px;}
 
+  .titler {
+    width: max-content;
+    padding: 16px 32px;
+    box-shadow: 6px 5px 12px #171717;
+  }
+
+  .titler:hover {
+    box-shadow: 6px 5px 12px #171717 inset;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
 
- h1 { font-size: 3.2rem; }
+ h1 { 
+    font-size: 32px;
+    margin: 0.5rem 0 .75rem 0;
+  }
  h2 { font-size: 2.4rem; }
- h3 { font-size: 2rem; }
+ h3 { font-size: 24px; }
  h4 { font-size: 1.32rem;}
  h5 { font-size: 1.32rem;}
  h6 { font-size: 12px;}
  p { font-size: 1rem; }
  small { font-size: 12px; }
 
+ .titler {
+  width: 100vw;
+  padding: 16px 32px;
+  box-shadow: 6px 5px 12px #171717;
 }
+
+}
+

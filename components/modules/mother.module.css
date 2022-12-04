@@ -8,6 +8,13 @@
   background-color: #272727;
 }
 
+.fullfullcol {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 128px;
+}
+
 .mother li {
   font-family: 'Inter Tight',sans-serif;
   list-style-type: none;
@@ -93,6 +100,11 @@
     flex-direction: row;
     padding: 128px 32px 128px 32px;
     min-height: 100vh;
+  }
+
+  .fullfullcol {
+    width: 100vw;
+
   }
 
 .child {

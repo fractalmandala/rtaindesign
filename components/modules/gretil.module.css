@@ -7,15 +7,12 @@
     background-color: #272727;
     color: white;
     height: 100%;
-    width: 100%;
     box-sizing: border-box;
 }
 
 .gretilindex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 20%;
+    box-sizing: border-box;
 }
 
 .ofnum {
@@ -26,11 +23,23 @@
 
 .ofnumashead {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 20%;
+    font-family: 'Inter Tight',sans-serif;
+    color: #878787;
+    transition: all 0.15s ease-in;
+    transform-origin: center center;
+    display: none;
+
 }
 
+.ofnumashead:hover {
+    transform: scale(1.25);
+    color: #53dd6c;
+}
+
+.fillera, .fillerb {
+    width: 100%;
+    display: flex;
+}
 
 .ofline {
     font-family: 'STIX Two Text',serif;
@@ -38,53 +47,154 @@
     box-sizing: border-box;
 }
 
+.ofmeta {
+    font-family: 'Inter Tight',sans-serif;
+    position: relative;
+    margin-top: 48px;
+}
+
+.ofmeta::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: 'GRETIL Primary Source:';
+    margin-top: -20px;
+    color: #878787;
+}
+
 @media screen and (min-width: 900px) {
 
 .gretil {
     margin: 0 0 4px 0;
+    width: 60%;
+    align-self: center;
+}
+
+.gretilindex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20vw 0 0;
+    gap: 8px;
 }
 
 .ofnum {
     font-size: 12px;
+    margin-left: 32px;
+    margin-bottom: 8px;
+}
+
+.ofnumashead {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 12%;
+    justify-content: center;
+    font-size: 12px;
+    padding: 4px 0;
 }
 
 .ofline {
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 4px;
+}
+
+.ofmeta {
+    margin-left: 32px;
+}
+
+.ofmeta::before {
+    font-size: 12px;
+}
+
+.fillera, .fillerb {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 }
 
 @media screen and (max-width: 899px) and (min-width: 769px) {
 
+    .gretil {
+        margin: 0 0 4px 56px;
+        width: 64%;
+        align-self: center;
+    }
+
     .ofnum {
         font-size: 12px;
+        margin-bottom: 8px;
+
     }
 
     .ofline {
         font-size: 18px;
+        margin-left: 4px;
+    }
+
+    .ofmeta {
+        margin-left: 32px;
+    }
+    
+    .ofmeta::before {
+        font-size: 12px;
     }
 
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
 
+    .gretil {
+        margin: 0 32px;
+        width: 96%;
+    }
+    
     .ofnum {
         font-size: 12px;
+        margin-bottom: 8px;
     }
     .ofline {
         font-size: 18px;
+        margin-left: 8px;
+    }
+    .ofmeta {
+        margin-left: 32px;
+    }
+    
+    .ofmeta::before {
+        font-size: 12px;
     }
 
 }
 
 @media screen and (max-width: 640px) {
 
+    .gretil {
+        margin: 0 16px;
+        width: 100%;
+    }
+
     .ofnum {
         font-size: 10px;
+        margin-bottom: 8px;
+        display: flex;
+        word-break: break-all;
+        width: 100%;
+  
     }
     .ofline {
-        font-size: 16px;
+        font-size: 17px;
+        margin-left: 8px;
+        width: 88%;
+    }
+    .ofmeta {
+        margin-left: 32px;
+    }
+    
+    .ofmeta::before {
+        font-size: 12px;
     }
 
 }

@@ -1,10 +1,10 @@
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import supabase from '../lib/supaclient'
-import Gretil from '../components/gretil'
-import styles from './modules/gretil.module.css'
+import Gretilindex from '../components/gretilindex'
+import styles from '../components/modules/gretil.module.css'
+import Link from 'next/link'
 
-const Chmim = () => {
+const Mimamsaindex = () => {
   const [fetchError, setFetchError] = useState(null)
   const [versesmim, setVersesmim] = useState(null)
 
@@ -16,7 +16,7 @@ const Chmim = () => {
         .eq('tag','l')
       
       if (error) {
-        setFetchError('Could not fetch the smoothies')
+        setFetchError('Could not fetch the data')
         setVersesmim(null)
       }
       if (data) {
@@ -30,23 +30,23 @@ const Chmim = () => {
 
 
 return (
-  <div>
-   {fetchError && (<p>{fetchError}</p>)}
-    <div> {versesmim && (
-      <div>
+  <Gretilindex>
+    {fetchError && (<p>{fetchError}</p>)}
+      <div className={styles.fillera}> {versesmim && (
+        <div className={styles.fillerb}>
           {versesmim.map(versemim => (
-            <Gretil>
-              <div className={styles.ofnum} id={versemim.verse}>
-                {versemim.verse}<span className={styles.ofline}>{versemim.styledLine}</span>
-              </div>
-            </Gretil>
+            <div className={styles.ofnumashead}>
+ 
+                {versemim.verse}
+
+            
+            </div>
           ))}
-      </div>
-    )}
+        </div>
+      )}
     </div>
-  </div>
+  </Gretilindex>
 )
 }
 
-export default Chmim
-
+export default Mimamsaindex

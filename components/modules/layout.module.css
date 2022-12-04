@@ -15,6 +15,14 @@
   padding: 0;
 }
 
+.toggler {
+  font-family: 'Inter Tight',sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: #878787;
+}
+
 .light {
   background-color: #ffffff;
   color: #272727;
@@ -24,4 +32,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+
+.toggler {
+  margin-left: 32px;
+  padding: 12px 0;
+}
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 769px) {
+
+  .toggler {
+    margin-left: 32px;
+    padding: 12px 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+  .toggler {
+    margin-left: 32px;
+    padding: 12px 0;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .toggler {
+    margin-left: 32px;
+    padding: 12px 0;
+  }
+
 }
