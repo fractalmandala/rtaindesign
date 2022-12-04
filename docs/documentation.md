@@ -84,20 +84,18 @@ Here, add a final column K and give it an index numbering from 1 to *n*, where *
 
 Before downloading the sheet, give a final check to the header values of each column. These should be:
 
-> ``
-> column A: 
-> column B:
-> column C:
-> column D: 
-> column E:
-> column F:
-> column G:
-> column H:
-> column I: 
-> column J:
-> column K:
-> column L: 
-> ``
+> `` column A: dataItem ``   
+> `` column B: tag ``   
+> `` column C: length ``   
+> `` column D: fixedlength ``   
+> `` column E: styled ``   
+> `` column F: styled2-line ``   
+> `` column G: styled2-num ``   
+> `` column H: styled3-name ``   
+> `` column I: styled3-num ``   
+> `` column J: chapter ``   
+> `` column K: verse ``   
+> `` column L: primvalue ``
 
 You can absolutely change the titles in any of these headers, but if you do, then make sure to similarly change the titles in the javascript functions used in later sections here. 
 
@@ -109,4 +107,60 @@ With upload complete, the data is now ready for querying and rendering at front-
 
 Next.js makes it quite simple to fetch data from a public API and customize the styling, while Supabase offers easy end-points for tables stored in its database. We've tried to document the steps here such that an absolute layperson with no knowledge of any of these terms could still recreate the end-result by following each step exactly as is. But even a bare understanding of React, Next.js and public APIs can make this step a breeze. 
 
-For demonstration, imagine that the table we need to query data from is titled *'rep-mimamsasutra'* in Supabase. 
+For demonstration, imagine that the table we need to query data from is titled *'rep-mimamsasutra'* in Supabase. The output of our demonstration fetch can be viewed at [this page.](/#fetching). All we need to do is write a simple function, but before that please configure your setup to be able to query data from Supabase.
+
+Our setup is on Next.js, so we create a *.env.local* file in the root directory and add the following code:
+
+> `` NEXT_PUBLIC_SUPABASE_URL=https://rnfvzaelmwbbvfbsppir.supabase.co ``   
+> `` NEXT_PUBLIC_SUPABASE_ANON_KEY=<insert_anon_key_here> ``
+
+In the above, replace the url with the url of your public API. The link here is our public API, and it will remain public so you too can query from it. For the second field, replace *<insert_anon_key_here>* with your personal anon key. Both these values can be found in your Supabase/other db account. When deploying the build, make sure the .env.local data is transferred as environment variables to whatever CMS platform you host the front-end on. We host it on Vercel, which is the creator of Next.js. 
+
+Then, create a new page titled 'fetching.tsx' (or any other name, in .js, .jsx or .tsx format) and paste the following code: 
+
+> ```
+> import Layout from '../components/layout'   
+> import Post from '../interfaces/post'   
+> import Link from 'next/link'   
+> import { useEffect, useState } from 'react'   
+> import supabase from '../lib/supaclient'   
+> ```
+> ```  
+> const Foitch = () => {   
+> const [fetchError, setFetchError] = useState(null)   
+> const [smoothies, setSmoothies] = useState(null)   
+> useEffect(() => {   
+> const fetchSmoothies = async () => {   
+> const { data, error } = await supabase   
+> .from('vedicconcordance2')   
+> .select()   
+> if (error) {   
+> setFetchError('Could not fetch the smoothies')   
+> setSmoothies(null)   
+> } if (data) {   
+> setSmoothies(data)   
+> setFetchError(null)   
+> }   
+> }   
+> fetchSmoothies()   
+> }, [])
+> ```  
+> ``` return (   
+> <div className="page home">   
+> <Link href="/">Return</Link>   
+> {fetchError && (<p>{fetchError}</p>)}   
+> {smoothies && (   
+> <div className="smoothies">   
+> {/* order-by buttons */}   
+> <div className="smoothie-grid">   
+> {smoothies.map(smoothie => (   
+> <p>{smoothie.occurence}</p>   
+> ))}   
+> </div>   
+> </div>   
+> )}   
+> </div>   
+> )} 
+> export default Foitch
+
+Let us break down what happens on this page. 

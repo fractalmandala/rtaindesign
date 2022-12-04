@@ -128,6 +128,7 @@
 
 .normbody code {
   font-family: 'JetBrains Mono';
+  color: var(--grey);
 }
 
 .normbody ol, .normbody li {
@@ -169,7 +170,7 @@
     font-size: 10px;
     padding: 0;
     margin: 0;
-    line-height: 0.5em;
+    line-height: 1.24em;
   }
 
   .normbody blockquote {
