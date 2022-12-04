@@ -6,7 +6,7 @@ export default function Hometext() {
  <div className={styles.mother}>
  <h5>Reality is made up of language, or code.<br></br>
  And like all code, reality can be hacked.<br></br><br></br>
- Much of our reality is already compromised. But there is way out.<br></br>
+ Much of our reality is already compromised. But there is a way out.<br></br>
  All we need to do is <span className="col-g">reinstall base operating code.</span></h5>
  </div>
  

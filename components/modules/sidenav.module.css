@@ -7,7 +7,6 @@
   z-index: 998;
   height: 100%;
   transition: all 0.3s ease-out;
-  border-right:1px solid #414141;
   box-sizing: border-box;
 }
 
@@ -21,8 +20,9 @@
 @media screen and (min-width: 900px) {
 
 .sidenav {
-  width: 18vw;
+  width: 22vw;
   padding: 128px 8px 32px 32px;
+  border-right:1px solid #414141;
 }
 
 }
@@ -30,8 +30,9 @@
 @media screen and (max-width: 899px) and (min-width: 769px) {
 
   .sidenav {
-    width: 18vw;
+    width: 24vw;
     padding: 128px 8px 32px 32px;
+    border-right:1px solid #414141;
   }
 
 }
@@ -39,8 +40,11 @@
 @media screen and (max-width: 768px) and (min-width: 641px) {
 
   .sidenav {
-    width: 20vw;
+    width: 100vw;
     padding: 104px 8px 32px 24px;
+    height: max-content;
+    background-color: #272727;
+    text-align: center;
   }
 
 }
@@ -49,7 +53,10 @@
 
   .sidenav {
     width: 100vw;
-    padding: 88px 8px 32px 16px;
+    padding: 88px 16px 16px 16px;
+    height: max-content;
+    background-color: #272727;
+    text-align: center;
   }
 
 }

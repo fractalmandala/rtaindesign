@@ -3,9 +3,7 @@
 .mother {
   display: flex;
   margin: 0;
-  padding: 128px 32px 128px 32px;
   box-sizing: border-box;
-  min-height: 100vh;
   width: 100vw;
   background-color: #272727;
 }
@@ -82,8 +80,6 @@
 }
 
 .child {
-  width: 75vw;
-  margin-left: 25vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -95,11 +91,15 @@
 
   .mother {
     flex-direction: row;
+    padding: 128px 32px 128px 32px;
+    min-height: 100vh;
   }
 
 .child {
+  width: 75vw;
   padding-left: 4vw;
   padding-right: 10vw;
+  margin-left: 24vw;
 }
 
 }
@@ -108,11 +108,15 @@
 
   .mother {
     flex-direction: row;
+    padding: 128px 32px 128px 32px;
+    min-height: 100vh;
   }
 
   .child {
+    width: 75vw;
     padding-left: 4vw;
     padding-right: 4vw;
+    margin-left: 24vw;
   }
 
 }
@@ -121,11 +125,16 @@
 
   .mother {
     flex-direction: column-reverse;
+    padding: 128px 24px 128px 24px;
+    height: max-content;
   }
   
   .child {
-    padding-left: 2.4vw;
-    padding-right: 4vw;
+    width: 96vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-left: 0vw;
+    margin-top: 32px;
   }
 
 }
@@ -134,11 +143,16 @@
 
   .mother {
     flex-direction: column-reverse;
+    padding: 128px 16px 128px 16px;
+    height: max-content;
   }
 
   .child {
-    padding-left: 1.6vw;
-    padding-right: 1.6vw;
+    width: 96vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin-left: 0vw;
+    margin-top: 32px;
   }
 
 }
