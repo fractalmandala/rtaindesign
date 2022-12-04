@@ -1,0 +1,30 @@
+componentDidMount() {
+  var self = this;
+  axios
+  .get("http://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_jaimini-mImAMsAsUtra.xml", {
+    "Content-Type": "application/xml; charset=utf-8"
+  })
+  .then(function(response) {
+    self.setState({ authors: response.data });
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+}
+
+render() {
+  const { authors } = this.state;
+
+  return (
+    <div>
+      Parse XML using ReactJs
+			{(authors && authors.length > 0) &&
+			authors.map((item) => {
+				return (
+					<span>{item.FirstName}</span>
+				)
+			})
+		}
+    </div>
+  );
+}
