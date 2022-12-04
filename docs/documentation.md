@@ -99,6 +99,8 @@ Before downloading the sheet, give a final check to the header values of each co
 > column L: 
 > ``
 
+You can absolutely change the titles in any of these headers, but if you do, then make sure to similarly change the titles in the javascript functions used in later sections here. 
+
 Download this sheet now as a plain .csv file, and upload the .csv file to Supabase as a new table. For larger indexing and scalability, all clean, front-ready tables are created with the prefix *'rep-'* in the name, where *rep* is short for *repository*. In Supabase, use the column L - 'primvalue' as the primary key. 
 
 With upload complete, the data is now ready for querying and rendering at front-end! 
