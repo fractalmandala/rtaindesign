@@ -31,7 +31,7 @@ export default function Home ({allPostsData}) {
               <p>Welcome to the Bṛhat Open Library - a tool for reinstallation of base operating code.<br></br>
               An open-access, open-source repository for scriptures, texts, papers, books and other material, all related to Bhārata, Itihāsa and Dharma.<br></br><br></br>
               To cut through the clutter and find your own way around, click on any of the texts listed here and take it from there.<br></br><br></br>
-              For a detailed and complete guide on how to use the Open Library to reconnect with the Indian civilizational consciousness, read our 'User Guide'. You are currently in the 'Repository of Scripture' sub-section of the Open Library. Return to the main section <Link href="https://brhat.in/bol">here.</Link> More about the library is available here, and our parent website for Bṛhat is <Link href="https://brhat.in">here.</Link><br></br><br></br>
+              For a detailed and complete guide on how to use the Open Library to reconnect with the Indian civilizational consciousness, read our 'User Guide'. To just get a quick start, explore the Mīmāṃsasūtra text, which is our best-case concept document. You are currently in the 'Repository of Scripture' sub-section of the Open Library. Return to the main section <Link href="https://brhat.in/bol">here.</Link> More about the library is available here, and our parent website for Bṛhat is <Link href="https://brhat.in">here.</Link><br></br><br></br>
               <span className="col-g">This build is currently a work-in-progress. Expect broken/dead links and/or errors.</span></p>
              </Genflex>
           </Mother>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import supabase from '../lib/supaclient'
+import Gretil from '../components/gretil'
 import styles from './modules/gretil.module.css'
 
 const Chmim = () => {
@@ -10,7 +11,7 @@ const Chmim = () => {
   useEffect(() => {
     const fetchVersesmim = async () => {
       const { data, error } = await supabase
-        .from('rep-mimamsasutra')
+        .from('rep-mimamsa')
         .select()
       
       if (error) {
@@ -35,9 +36,15 @@ return (
         {/* order-by buttons */}
         <div>
           {versesmim.map(versemim => (
-           <div>
+           <Gretil>
+           <div className={styles.ofnum} id={versemim.verse}>
             {versemim.verse}
-           </div>
+           
+           <span className={styles.ofline}>
+            {versemim.styledLine}
+            </span>
+            </div>
+            </Gretil>
           ))}
         </div>
       </div>

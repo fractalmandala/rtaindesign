@@ -1,28 +1,29 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import supabase from '../lib/supaclient'
+import Gretilindex from '../components/gretilindex'
 import styles from './modules/gretil.module.css'
 
 const Vrmim = () => {
   const [fetchError, setFetchError] = useState(null)
-  const [linesmim, setLinesmim] = useState(null)
+  const [versesmim, setVersesmim] = useState(null)
 
   useEffect(() => {
-    const fetchLinesmim = async () => {
+    const fetchVersesmim = async () => {
       const { data, error } = await supabase
-        .from('rep-mimamsasutra')
+        .from('rep-mimamsa')
         .select()
       
       if (error) {
         setFetchError('Could not fetch the smoothies')
-        setLinesmim(null)
+        setVersesmim(null)
       }
       if (data) {
-        setLinesmim(data)
+        setVersesmim(data)
         setFetchError(null)
       }
     }
-    fetchLinesmim()
+    fetchVersesmim()
 
   }, [])
 
@@ -30,16 +31,18 @@ const Vrmim = () => {
 return (
   <div>
    {fetchError && (<p>{fetchError}</p>)}
-    <div> {linesmim && (
+    <div> {versesmim && (
       <div>
         {/* order-by buttons */}
-        <div>
-          {linesmim.map(linemim => (
-           <div>
-            {linemim.styled}
-           </div>
+     
+          {versesmim.map(versemim => (
+           <Gretilindex>
+           <div className={styles.ofnumashead}>
+           <Link href={`/texts/mimamsasutra/${versemim.verse}`}>{versemim.verse}</Link>
+            </div>
+            </Gretilindex>
           ))}
-        </div>
+       
       </div>
     )}
     </div>

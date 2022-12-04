@@ -65,6 +65,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               {allPostsData.map(({ id, title }) => (
                 <li key={id}>
                   <Link href={`/repository/${id}`}>{title}</Link>
+or
+<Link href={`/texts/mimamsasutra/${#versemim.verse}`}>{versemim.verse}</Link>
+
+
                 </li>
               ))}
             </ul>
