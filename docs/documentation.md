@@ -10,24 +10,14 @@ If you only need to use the Open Library to view, research and read, please see 
 
 ---
 
-#### Contents:
-1. Introduction
-2. Sources of Data
-3. [Text Parsing](/docs/documentation/#text-parsing)
-4. [Database and Storage](/docs/documentation/#database-and-storage)
-5. [Query and Fetch](/docs/documentation/#query-and-fetch)
-6. Frontend and UI
-7. Links
-8. Development Roadmap
-9. Licenses
 
-#### Introduction
+##### Introduction
 
 First, the disclaimer - I am not a professional programmer or developer. For all the steps you find, there are certain to be better, more efficient ways to do them. But mine is a journey of learning by creation, and I begin with the cursory basics that I know. For example, there are quite a few ways to transfer a bucket of data from, say, XML format, to a Next/React front-end. But I know neither JS nor these frameworks (nor even the technical jargon entirely), so you'll find me doing the same with extra steps, routed through Google Sheets and Supabase. To know more about my background or about my organization, Bṛhat, visit the About section.
 
 Second, the constant learning curve means a frequently changing codebase. While I will endeavor to keep the documentation updated, in crunch times priority will be keeping the User Guide up to date over the build specs. You may find the details here to be different to what's identifiable at front-end. Do forgive me in such a case, and please reach out at amrit.pandey@brhat.in for any queries/suggestions/issues. 
 
-#### Text Parsing
+##### Text Parsing
 
 Copy all data from the XML file on a new Google Sheets. The XML link should look like this- [http://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_jaimini-mImAMsAsUtra.xml](http://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_jaimini-mImAMsAsUtra.xml), and the data should appear as it does on the sample link. Note that the link ends in a ".xml" format. Paste this data with clear formatting in column A of the Google Sheet.
 
@@ -80,7 +70,7 @@ The final step in parsing is splitting the *'text_index'* to separate name and c
 
 That's actually it! We now have all the data we need, in the clean formats that we can use for rendering on site front-end. What's left is uploading to database and fetching via API. So let's move on. 
 
-#### Database and Storage
+##### Database and Storage
 
 We store our API-ready data in [Supabase](https://supabase.com/). Their free-tier offers up to 500MB of database, which is more than enough for the repository's current size. They also have detailed documentation for tasks like data upload, Next.js integration and API querying.
 
@@ -111,7 +101,7 @@ Download this sheet now as a plain .csv file, and upload the .csv file to Supaba
 
 With upload complete, the data is now ready for querying and rendering at front-end! 
 
-#### Query and Fetch
+##### Query and Fetch
 
 Next.js makes it quite simple to fetch data from a public API and customize the styling, while Supabase offers easy end-points for tables stored in its database. We've tried to document the steps here such that an absolute layperson with no knowledge of any of these terms could still recreate the end-result by following each step exactly as is. But even a bare understanding of React, Next.js and public APIs can make this step a breeze. 
 

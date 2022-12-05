@@ -11,6 +11,7 @@ const Docnav = ({ preview, children }: Props) => {
     <>
     <div className={styles.sidenav}>
     <Link href="/docs/documentation">Documentation</Link>
+    <Link href="/docs/about">About</Link>
     </div>
     </>
   )

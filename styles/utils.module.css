@@ -88,17 +88,16 @@
 }
 
 .normbody p {
-  font-family: 'Inter Tight',sans-serif;
-  line-height: 1.4em;
-  letter-spacing: 0px;
-  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.64em;
   margin: 0;
   padding: 32px 0 0 0;
-  color: #d7d7d7;
+  color: #ffffff;
 }
 
 .normbody a {
-  color: var(--prim);
+  color: #ff3d00;
+  text-decoration: none;
 }
 
 .normbody h6 {
@@ -164,36 +163,17 @@
 
 @media screen and (max-width: 899px) and (min-width: 769px) {
 
-  .normbody p { font-size: 1rem;}
-
-}
-
-@media screen and (max-width: 768px) and (min-width: 641px) {
-
-  .normbody p { font-size: 1rem;}
-
-}
-
-@media screen and (max-width: 640px) {
-
-  .normbody p { font-size: 1rem;}
-
-}
-
-
-
-@media screen and (min-width: 769px) {
-  
   .normheading {
     font-size: 2.4rem;
   }
 
-
+  .normbody p { font-size: 1rem;}
 
   .normbody h4 {
     font-size: 1.48rem;
     margin-top: 32px;
   }
+
 
   .normbody code {
     font-size: 10px;
@@ -214,8 +194,9 @@
 
 }
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
-  
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+  .normbody p { font-size: 1rem;}
   .normheading {
     font-size: 2.1rem;
   }
@@ -224,24 +205,22 @@
     font-size: 56px;
   }
 
-  .reader p {
-    font-size: 20px;
-  }
 
 }
 
-@media screen and (max-width: 414px) {
-  
+@media screen and (max-width: 640px) {
+
+  .normbody p { font-size: 1rem;}
   .normheading {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   
   .heading1 {
-    font-size: 48px;
+    font-size: 56px;
   }
 
-  .reader p {
-    font-size: 18px;
-  }
 
 }
+
+
+

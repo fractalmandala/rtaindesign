@@ -18,8 +18,8 @@ export default function Doc({ docData }) {
             <Docnav> </Docnav>
             <Mother>
             <Genflex>
-      <div className={utilStyles.normheading}>{docData.title}</div>
-      <div className={utilStyles.normbody} dangerouslySetInnerHTML={{ __html: docData.contentHtml }} />
+      <h1>{docData.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: docData.contentHtml }} />
       </Genflex>
 </Mother>
     </Layout>
