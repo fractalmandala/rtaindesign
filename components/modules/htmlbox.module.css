@@ -20,6 +20,7 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {
+
   .htmlbox {
     padding: 3.2rem 3.2rem 3.2rem 4.8rem;
     margin: 2rem;
@@ -31,6 +32,7 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 415px) {
+
   .htmlbox {
     padding: 1rem;
     margin: 1rem;
@@ -41,6 +43,7 @@
 }
 
 @media screen and (max-width: 414px) {
+  
   .htmlbox {  
     margin: 1rem;
     padding: 1rem;

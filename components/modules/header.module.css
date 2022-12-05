@@ -50,7 +50,6 @@
 
 
 .brander a {
-  font-family: 'Inter Tight',sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -65,7 +64,6 @@
 }
 
 .other a {
-  font-family: 'Inter Tight',sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: white;

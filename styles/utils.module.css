@@ -25,36 +25,6 @@
   word-break: break-word;
 }
 
-.reader h1 {
-  font-family: 'Inter Tight',sans-serif;
-  font-size: 15px;
-}
-
-.reader h2 {
-  font-family: 'Inter Tight',sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  color: white;
-  display: none;
-}
-
-.reader h3 {
-  font-family: 'Inter Tight',sans-serif;
-  color: #ff3d00;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.reader h6 {
-  font-family: 'Inter Tight',sans-serif;
-  color: #ff3d00;
-  font-weight: 600;
-  font-size: 14px;
-  margin: 4px 0 12px 0;
-  padding: 0;
-  position: relative;
-}
-
 .reader h6::after {
   position: absolute;
   top: 0;
@@ -65,48 +35,8 @@
   content: '';
 }
 
-.reader p {
-  font-family: 'Inter Tight',serif;
-  color: white;
-  font-size: 21px;
-  letter-spacing: 0px;
-  margin: 20px 0 4px 0;
-  padding: 0;
-}
-
-#begin {
-  font-family: 'Inter Tight',sans-serif;
-  font-size: 15px;
-}
-
-.normheading {
-  font-family: 'Inter Tight',sans-serif;
-  font-weight: 500;
-  color: var(--grey);
-  margin-bottom: 6px;
-}
-
-.normbody p {
-  letter-spacing: 0.5px;
-  line-height: 1.64em;
-  margin: 0;
-  padding: 32px 0 0 0;
-  color: #ffffff;
-}
-
-.normbody a {
-  color: #ff3d00;
-  text-decoration: none;
-}
-
-.normbody h6 {
-  color: var(--prim);
-}
 
 .normbody h5 {
-  font-family: 'Inter Tight',sans-serif;
-  font-size: 24px;
-  font-weight: 600;
   margin-top: 32px;
   position: relative;
 }
@@ -124,12 +54,6 @@
   background-color: var(--prim);
 }
 
-.normbody h4 {
-  font-family: 'Inter Tight',sans-serif;
-  color: var(--prim);
-  letter-spacing: 0px;
-  font-weight: bold;
-}
 
 .normbody code {
   font-family: 'JetBrains Mono';
@@ -155,71 +79,5 @@
 .normbody blockquote {
   box-sizing: border-box;
 }
-
-@media screen and (min-width: 900px) {
-  .normbody p { font-size: 1rem;}
-}
-
-@media screen and (max-width: 899px) and (min-width: 769px) {
-
-  .normheading {
-    font-size: 2.4rem;
-  }
-
-  .normbody p { font-size: 1rem;}
-
-  .normbody h4 {
-    font-size: 1.48rem;
-    margin-top: 32px;
-  }
-
-
-  .normbody code {
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-    line-height: 1.24em;
-  }
-
-  .normbody blockquote {
-    margin: 24px 88px 24px 32px;
-    padding: 2px 32px 2px 32px;
-    border-left: 2px solid var(--prim);
-    border-radius: 4px;
-    box-shadow: 4px 2px 5px #191919 inset;
-    background-color: #212121;
-    line-height: 0.5em;
-  }
-
-}
-
-@media screen and (max-width: 768px) and (min-width: 641px) {
-
-  .normbody p { font-size: 1rem;}
-  .normheading {
-    font-size: 2.1rem;
-  }
-  
-  .heading1 {
-    font-size: 56px;
-  }
-
-
-}
-
-@media screen and (max-width: 640px) {
-
-  .normbody p { font-size: 1rem;}
-  .normheading {
-    font-size: 2.1rem;
-  }
-  
-  .heading1 {
-    font-size: 56px;
-  }
-
-
-}
-
 
 

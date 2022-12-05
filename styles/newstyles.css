@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -10,6 +9,10 @@ body {
   background-color: #272727;
   color: white;
   font-family: 'Inter Tight',sans-serif;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, blockquote, cite, small {
+  font-family: 'Inter Tight', sans-serif;
 }
 
 a {
@@ -128,13 +131,11 @@ cite {
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: 0.5px;
-  font-family: var(--official);
 }
 
 small {
   font-size: 12px;
   margin: 0.5rem 0 .75rem 0;
-  font-family: var(--official);
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
@@ -149,7 +150,6 @@ p {
 h6 {
   font-weight: 300;
   line-height: 1.25;
-  font-family: 'Inter Tight',sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -157,7 +157,6 @@ h6 {
 h5 {
   font-weight: bold;
   line-height: 1.24;
-  font-family: 'Inter Tight',serif;
   letter-spacing: 0.5px;
   padding-left: 16px;
   border-left: 2px solid #ff3d00;
@@ -167,27 +166,23 @@ h5 {
 h4 {
   margin: 0.5rem 0 .75rem 0;
   font-weight: 500;
-  font-family: 'Inter Tight',sans-serif;
 }
 
 h3 {
   font-weight: 200;
   line-height: 1.1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: 'Inter Tight',sans-serif;
 }
 
 h2 {
   font-weight: 200;
   line-height: 1;
   margin: 0.5rem 0 .75rem 0;
-  font-family: 'Inter Tight',sans-serif;
 }
 
 h1 {
   line-height: 1;
   text-transform: uppercase;
-  font-family: 'Inter Tight',sans-serif;
 }
 
 .gen-h {
@@ -216,9 +211,11 @@ h1 {
     font-size: 1rem;
     padding-bottom: 24px;
   }
-  h6 { font-size: 12px;
-  margin-bottom: 20px;
-}
+
+  h6 { 
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
 
   h5 { 
     font-size: 1.4rem;
@@ -228,14 +225,17 @@ h1 {
   h4 {
     font-size: 2rem;
   }
+  
   h3 {
     font-size: 3.2rem;
   }
+  
   h1 {
-      font-size: 48px;
-      font-weight: 700;
-      margin: 0 0 2rem 0;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
   }
+  
   .titler {
     width: max-content;
     padding: 16px 32px;
@@ -256,21 +256,32 @@ h1 {
 
 @media screen and (max-width: 899px) and (min-width: 769px) {
 
-  p { font-size: 1rem;}
-  h5 { font-size: 1.32rem;}
-  h4 {font-size: 1.6rem; width: 100%;}
+  p {
+    font-size: 1rem;
+  }
+  
+  h5 {
+    font-size: 1.32rem;
+  }
+  
+  h4 {
+    font-size: 1.6rem; width: 100%;
+  }
+  
   h6 { 
     font-size: 12px;
     margin-bottom: 20px;
   }
+  
   h3 {
     font-size: 2.4rem;
   }
+  
   h1 {
     font-size: 48px;
     font-weight: 700;
     margin: 0 0 .72rem 0;
-}
+  }  
 
   .titler {
     width: max-content;
@@ -290,11 +301,27 @@ h1 {
     font-size: 48px;
     margin: 0.5rem 0 .75rem 0;
   }
-  h2 { font-size: 4rem; }
-  h3 { font-size: 24px; }
-  h4 { font-size: 1.56rem; }
-  h5 { font-size: 1.32rem; }
-  p { font-size: 1rem; }
+  
+  h2 { 
+    font-size: 4rem; 
+  }
+  
+  h3 { 
+    font-size: 24px; 
+  }
+  
+  h4 { 
+    font-size: 1.56rem; 
+  }
+  
+  h5 { 
+    font-size: 1.32rem; 
+  }
+  
+  p { 
+    font-size: 1rem; 
+  }
+  
   h6 { 
     font-size: 12px;
     margin-bottom: 20px;
@@ -314,101 +341,41 @@ h1 {
 
 @media screen and (max-width: 640px) {
 
- h1 { 
+  h1 { 
     font-size: 32px;
     margin: 0.5rem 0 .75rem 0;
   }
- h2 { font-size: 2.4rem; }
- h3 { font-size: 24px; }
- h4 { font-size: 1.32rem;}
- h5 { font-size: 1.32rem;}
- h6 { 
+  
+  h2 {
+    font-size: 2.4rem; 
+  }
+  
+  h3 { 
+    font-size: 24px; 
+  }
+  
+  h4 { 
+    font-size: 1.32rem;
+  }
+  
+  h5 { font-size: 1.32rem;
+  }
+  
+  h6 { 
   font-size: 12px;
   margin-bottom: 20px;
-}
- p { font-size: 1rem; }
- small { font-size: 12px; }
+  }
+  
+  p { font-size: 1rem; 
+  }
+  
+  small { font-size: 12px; 
+  }
 
- .titler {
+  .titler {
   width: 100vw;
   padding: 16px 32px;
   box-shadow: 6px 5px 12px #171717;
-}
+  }
 
 }
-
-/**************************************************************************************
-BRAINS
-************************************************************************************/
-
-
-    .brainContainer{
-        width:50vw;
-        height:50vw;
-        max-height:400px;
-        max-width:400px;
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform:translate(-50%,-50%);
-        overflow:hidden;
-        cursor:pointer;
-        z-index:-1;
-    }
-    svg{
-        height:100%;
-        width:100%;
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform:translate(-50%,-50%);
-    }
-    path{
-      fill:transparent;
-    }
-    .brainPath{
-      stroke:#00ff00;
-      stroke-width:1;
-    }
-    .brainCircle{
-      stroke:#00FF00;
-      fill:#00FF00;
-    }
-    .brainRect{
-      stroke:#00FF00;
-      fill:#00FF00;
-    }
-    .brainEllipse{
-      stroke:#00FF00;
-      fill:#00FF00;
-    }
-    .animatePaths{
-      animation: goPath 3000ms alternate infinite;
-    }
-    .animateCircles{
-      animation: goCircle 3000ms alternate infinite;
-    }
-    .animateRects{
-      animation: goRect 3000ms alternate infinite;
-    }
-    @keyframes goPath {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    @keyframes goRect {
-      to {
-        opacity:0;
-      }
-    }
-    @keyframes goCircle {
-      0% {
-        opacity:0;
-      }
-      50% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-      }
-    }
