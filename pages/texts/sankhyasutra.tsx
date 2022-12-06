@@ -1,24 +1,25 @@
 import Link from 'next/link'
 import Sankhyameta from '../../extracts/sankhyameta'
-import Sankhyaindex from '../../extracts/sankhyaindex'
 import Sankhya from '../../extracts/sankhya'
-import VisibToggle from '../../components/visibtoggle'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
-import Fullfullcol from '../../components/fullfullcol'
+import Mother from '../../components/mother'
+import Sidenav from '../../components/sidenav'
+import Genflex from '../../components/genflex'
 
 export default function Text () {
   return (
     <Layout>
     <Header></Header>
-    <Fullfullcol>
-    <div className="titler"><h1>Sāṅkhyasūtra</h1>
-    <h3>Kapila</h3></div>
+    <Sidenav> </Sidenav>
+    <Mother>
+    <Genflex>
+    <h1>Sāṅkhyasūtra</h1>
+    <h5>Kapila</h5>
     <Sankhyameta></Sankhyameta>
-    <VisibToggle>Show Index</VisibToggle>
-    <Sankhyaindex></Sankhyaindex>
     <Sankhya></Sankhya>
-    </Fullfullcol>
+    </Genflex>
+    </Mother>
     </Layout>
   )
 }

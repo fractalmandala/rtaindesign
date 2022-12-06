@@ -1,24 +1,25 @@
 import Link from 'next/link'
 import Mimamsameta from '../../extracts/mimamsameta'
-import Mimamsaindex from '../../extracts/mimamsaindex'
 import Mimamsa from '../../extracts/mimamsa'
-import VisibToggle from '../../components/visibtoggle'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
-import Fullfullcol from '../../components/fullfullcol'
+import Mother from '../../components/mother'
+import Sidenav from '../../components/sidenav'
+import Genflex from '../../components/genflex'
 
 export default function Text () {
   return (
     <Layout>
     <Header></Header>
-    <Fullfullcol>
-    <div className="titler"><h1>Mīmāṃsasūtra</h1>
-    <h3>Jaimini</h3></div>
+    <Sidenav> </Sidenav>
+    <Mother>
+    <Genflex>
+    <h1>Mīmāṃsasūtra</h1>
+    <h5>Jaimini</h5>
     <Mimamsameta></Mimamsameta>
-    <VisibToggle>Show Index</VisibToggle>
-    <Mimamsaindex></Mimamsaindex>
     <Mimamsa></Mimamsa>
-    </Fullfullcol>
+    </Genflex>
+    </Mother>
     </Layout>
   )
 }

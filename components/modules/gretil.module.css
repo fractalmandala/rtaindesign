@@ -5,8 +5,11 @@
     flex-direction: column;
     background-color: #272727;
     color: white;
-    height: 100%;
+    height: max-content;
     box-sizing: border-box;
+    border: 1px solid #474747;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px #212121;
 }
 
 .gretilindex {
@@ -45,7 +48,7 @@
 
 .ofmeta {
     position: relative;
-    margin-top: 48px;
+    margin-top: 12px;
 }
 
 .ofmeta::before {
@@ -62,9 +65,9 @@
 @media screen and (min-width: 900px) {
 
 .gretil {
-    margin: 0 0 4px 0;
-    width: 60%;
-    align-self: center;
+    margin: 32px 0 0 0;
+    width: 100%;
+    padding: 16px 8px;
 }
 
 .gretilindex {
@@ -91,12 +94,9 @@
 }
 
 .ofline {
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
     margin-left: 4px;
-}
-
-.ofmeta {
-    margin-left: 32px;
 }
 
 .ofmeta::before {

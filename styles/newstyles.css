@@ -140,6 +140,11 @@ small {
   letter-spacing: 1px;
 }
 
+.sidenav small {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 p {
   letter-spacing: 0.5px;
   line-height: 1.64em;
