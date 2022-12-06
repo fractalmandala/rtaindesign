@@ -2,7 +2,7 @@
   display: flex;
   margin: 0;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
 }
 
 .fullfullcol {
@@ -115,7 +115,7 @@
 @media screen and (min-width: 900px) {
 
   .mother {
-    flex-direction: row;
+    flex-direction: column;
     padding: 128px 32px 128px 32px;
     min-height: 100vh;
   }

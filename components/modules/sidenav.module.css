@@ -6,20 +6,40 @@
   box-sizing: border-box;
 }
 
+.sidenav li {
+  list-style: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin: 0 0 2px 0;
+  padding: 0;
+  color: #878787;
+  transition: all 0.22s cubic-bezier(0.610, 0.000, 0.995, 0.080);
+  transform-origin: center left;
+  cursor: pointer;
+}
+
+.sidenav li:hover {
+  transform: translatex(16px);
+  color: #53cc6d;
+}
+
 .sidenav a {
   color: inherit;
   text-decoration: inherit;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 14px 0 6px 0;
+  color: #a7a7a7;
 }
 
 @media screen and (min-width: 900px) {
 
 .sidenav {
-  width: 22vw;
-  padding: 128px 8px 32px 32px;
+  width: 20vw;
+  padding: 104px 8px 32px 32px;
   border-right:1px solid #414141;
   height: 96vh;
   margin-top: 0;
