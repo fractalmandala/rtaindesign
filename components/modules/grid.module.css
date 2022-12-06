@@ -1,0 +1,65 @@
+.maincontain:root {
+  --greenlime: #a7c957;
+}
+
+.maincontain, .headerline, .subcontain, .sidenav { box-sizing: border-box; }
+
+.maincontain {
+  background-color: #171717;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerline {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 32px;
+  height: 5%;
+  background-color: #272727;
+  border-bottom: 1px solid transparent;
+  box-shadow: 5px 5px 13px #111111;
+  transition: all 0.34s ease-in;
+  position: relative;
+}
+
+.headerline:hover {
+  height: 8%; border-bottom: 1px solid #80b918;
+}
+
+.headerline:hover~.subcontain {
+  height: 92%;
+}
+
+.logospace {
+  font-family: 'Readex Pro',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #111111;
+  opacity: 0.5;
+  transition: opacity 0.34s ease-in;
+}
+
+.headerline:hover .logospace { opacity: 1;}
+
+.subcontain {
+  width: 100%;
+  display: flex;
+  height: 95%;
+  transition: all 0.34s ease-in;
+}
+
+.sidenav {
+  border-right: 1px solid #373737; width: 20vw;
+}
+
+@media screen and (min-width: 769px) {
+  .subcontain {
+    flex-direction: row;
+  }
+}
+
