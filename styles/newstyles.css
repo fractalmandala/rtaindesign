@@ -36,7 +36,6 @@ a {
   content:'';
   background-color: rgba(0,0,0,0.7);
   border: 1px solid red;
-  z-index: 3;
 }
 
 .col-g {
@@ -149,23 +148,28 @@ p {
 
 h6 {
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.124;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 h5 {
   font-weight: bold;
-  line-height: 1.24;
+  line-height: 1.124;
   letter-spacing: 0.5px;
   padding-left: 16px;
   border-left: 2px solid #ff3d00;
 
 }
 
+.rid-gen h5 {
+  border-left: 2px solid #53dd6c;
+}
+
 h4 {
   margin: 0.5rem 0 .75rem 0;
-  font-weight: 500;
+  line-height: 1.24em;
+  font-weight: 600;
 }
 
 h3 {

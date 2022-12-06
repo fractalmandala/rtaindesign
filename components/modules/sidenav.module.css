@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  z-index: 998;
   transition: all 0.3s ease-out;
   box-sizing: border-box;
 }

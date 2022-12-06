@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.isheader {
+.isheader, .ridheader {
   position: fixed;
   z-index: 999;
   display: flex;
@@ -11,31 +11,125 @@
   margin-bottom: -64px;
   border-bottom: 1px solid #414141;
   align-items: center;
-  padding: 0 32px;
   transition: all 0.2s ease-out;
   box-sizing: border-box;
   background: #272727;
-  overflow: hidden;
-}
+  overflow: hidden;}
+.isheader:hover, .ridheader:hover {
+  box-shadow: 4px -6px 8px #212121 inset;}
+.isheader {border-top: 1px solid #ff3d00; }
+.ridheader {border-top: 1px solid #53dd6c;}
 
-.isheader:hover {
-  box-shadow: 4px -6px 8px #212121 inset;
-}
-
-.isheader::after {
+.brander, .rander {display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;}
+.brander:hover .bolinf { animation: bolinfin 0.7s ease-in forwards;}  
+.bolinf svg, .bolball svg, .ridball svg { width: 100%;}
+.ridinf svg { width: 60%;}
+.bolinf { margin-right: -8px;transform: scale(0.8);transform-origin: right center;animation: bolinfout 5s ease-in-out forwards;}
+.bolball { transform: scale(0.85); transition: all 0.7s ease-out; cursor: pointer;}
+.bolball:hover, .ridball:hover { transform: scale(1);}
+.gol { filter: saturate(0);}  
+.other a, .rother a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  color: #575757;}
+.other a:hover, .rother a:hover {
+  color: white;}
+.other a::after, .rother a::after {
   position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
   width: 0%;
-  height: 1px;
   content: '';
-  margin-left: 50%;
-  border-top: 1px solid #ff3d00;
+  top: 0;
+  left: 0;}
+.other a::after { border-bottom: 1px solid #ff3d00; }
+.rother a::after { border-bottom: 1px solid #53dd6c; }
+.other a:hover::after, .rother a:hover::after {
+  animation: headingline 0.17s ease-out forwards;}
+.other, .rother { display: flex; flex-direction: row; justify-content: center; height: max-content; line-height: 1em; color: #474747;}
+/*LOGO*********************************************************************************/
+
+.hol {
+  display: flex; 
+  flex-direction: row; 
+  height: 40px; 
+  overflow: hidden;
+  border-radius: 16px 0 0 16px;}
+.rander { transform-origin: left center; }
+.hol { transform-origin: right center; justify-content: right;}
+.hol svg {width: 100%; height: 100%;}
+.hol:hover .bol {animation: ronmover 0.9s ease-in-out forwards;}
+.rander:hover .ridinf {animation: onmover 0.9s ease-in-out forwards;}
+.hol:hover .gol, .rander:hover .ridball {transform: scale(1); filter: saturate(1);}
+.bol {margin-right: -36px; z-index: 1;transform-origin:right center; transform: scale(0.82); animation: rballer 4s ease-out forwards; }
+.ridinf {margin-right: -42px; z-index: 1;transform-origin:left center; transform: scale(0.5); animation: baller 8s ease-out forwards; }
+.ridball, .rol {z-index: 2; transform-origin: center center;transition: all 0.4s ease-out;}
+.ridball {cursor: pointer; transform: scale(1);}
+
+@media screen and (min-width: 641px) {
+
+  .isheader, .ridheader {   padding: 0 32px; }
+  .brander, .rander {
+    width: 112px;
+  }
+
+  .hol {
+    min-width: 56px;
+  }
+
+  .other a, .rother a {
+    margin: 0 20px;
+  }
 }
 
-.isheader:hover::after {
-  animation: headerfunk 0.56s cubic-bezier(1.000, 0.005, 0.000, 0.700) forwards;
+@media screen and (max-width: 640px) and (min-width: 415px) {
+
+.brander, .rander {
+  width: 90px;
 }
+
+.hol {
+  width: 48px;
+}
+
+.other a, .rother a {
+  margin: 0 14px;
+}
+
+.isheader, .ridheader {   padding: 0 24px; }
+
+}
+
+@media screen and (max-width: 414px) {
+  .brander, .rander {
+    width: 70px;
+  }
+
+  .hol {
+    width: 30px;
+  }
+
+  .other a, .rother a {
+    margin: 0 6px;
+  }
+
+  .isheader, .ridheader {   padding: 0 16px; }
+}
+
+/***************************************************************************************
+ANIMATIONS
+***************************************************************************************/
 
 @keyframes headerfunk {
   0% {
@@ -47,61 +141,36 @@
   margin-left: 0%;
 }
 }
-
-
-.brander a {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-  text-transform: capitalize;
-  transition: all 0.15s ease-in;
-  padding-bottom: 0px;
-  line-height: 1rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.other a {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  margin-left: 24px;
-  cursor: pointer;
-  transition: all 0.15s ease-in;
-  padding-bottom: 2px;
-  color: #878787;
-}
-
-.other a:hover {
-  color: white;
-}
-
-.other a::after {
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  content: '';
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid #ff3d00;
-}
-
-.other a:hover::after {
-  animation: headingline 0.17s ease-out forwards;
-}
-
-@keyframes headingline {
+@keyframes onmover {
+  0% { margin-left:-12px;opacity:1;transform: scale(0.82);}
+  100% { margin-left: -44px;transform:scale(0.4); opacity:0;}}
+@keyframes baller { 
+  0% { margin-left: -42px; transform: scale(0.4); opacity: 0;}
+  50% {  transform: scale(0.82); opacity: 1;}
+  100% { opacity: 1; transform: scale(0.82);margin-left:-12px;}}
+@keyframes ronmover {
+  0% { margin-right:-36px;opacity:1;transform: scale(0.42);}
+  100% { margin-right: -10px;transform:scale(0.82); opacity:1;}}
+@keyframes rballer { 
+  0% { margin-right: 0px; transform: scale(0.82); opacity: 0;}
+  50% {  margin-right: -18px; opacity: 1;}
+  100% { opacity: 1; transform: scale(0.42);margin-right:-30px;}}
+  
+  @keyframes headingline {
   0% {
     width: 0%;
     margin-left: 50%;
   }
   100% {
     width: 100%;
-    margin-left: 0%;
-  }
+    margin-left: 0%;}}
+
+@keyframes bolinfout {
+  0% { opacity: 0; transform: scale(0.4); margin-right: -30px;}
+  50% { opacity: 1; transform: scale(0.8);}
+  100% { opacity: 1; transform: scale(0.8); margin-right: -8px;}
+}
+@keyframes bolinfin {
+  0% { opacity: 1; transform: scale(0.8); margin-right: -8px; }
+  100% { opacity: 0; transform: scale(0.5); margin-right: -30px;}
 }

@@ -8,6 +8,7 @@
     "cache-posts": "node scripts/cache.ts"
   },
   "dependencies": {
+    "@indic-transliteration/sanscript": "^1.2.7",
     "@markdoc/markdoc": "^0.2.1",
     "@markdoc/next.js": "^0.2.1",
     "@next/font": "^13.0.4",
