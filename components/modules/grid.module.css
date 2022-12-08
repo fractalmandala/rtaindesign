@@ -26,6 +26,18 @@
   position: relative;
 }
 
+.headerline a {
+  transition: all 0.34s ease-in;
+}
+
+.headerline a:hover {
+  color: white;
+}
+
+.headerline:hover a {
+  color: white;
+}
+
 .headerline:hover {
   height: 8%; border-bottom: 1px solid #80b918;
 }

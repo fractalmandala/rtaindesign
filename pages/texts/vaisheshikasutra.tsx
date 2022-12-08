@@ -14,8 +14,8 @@ export default function Text () {
     <Sidenav> </Sidenav>
     <Mother>
     <Genflex>
-    <div className="titler"><h1>Vaiśeṣikasūtra</h1>
-    <h3>Kaṇāda</h3></div>
+    <h1>Vaiśeṣikasūtra</h1>
+    <h5>Kaṇāda</h5>
     <Vaisheshikameta></Vaisheshikameta>
     <Vaisheshika></Vaisheshika>
     </Genflex>

@@ -36,10 +36,7 @@ return (
         <div className={styles.fillerb}>
           {versesmim.map(versemim => (
             <div className={styles.ofnumashead}>
- 
                 {versemim.verse}
-
-            
             </div>
           ))}
         </div>

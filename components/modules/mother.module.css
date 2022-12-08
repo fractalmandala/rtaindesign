@@ -112,6 +112,8 @@
   display: flex;
 }
 
+.rvbox { color: white;}
+
 @media screen and (min-width: 900px) {
 
   .mother {
