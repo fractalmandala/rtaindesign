@@ -112,7 +112,14 @@
   display: flex;
 }
 
-.rvbox { color: white;}
+.rvbox, .rvmsr { color: white;}
+.itemcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #474747;
+}
 
 @media screen and (min-width: 900px) {
 
@@ -179,8 +186,9 @@
 
   .mother {
     flex-direction: column-reverse;
-    padding: 128px 32px 128px 32px;
+    padding: 128px 24px 128px 24px;
     height: max-content;
+    width: 100vw !important;
   }
 
   .child {

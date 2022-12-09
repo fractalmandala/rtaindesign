@@ -1,12 +1,10 @@
 import Layout from '../components/layout'
-import Image from 'next/image'
 import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
 import Header from '../components/header'
 import Mother from '../components/mother'
 import Sidenav from '../components/sidenav'
 import Genflex from '../components/genflex'
-import Searchfunk from '../components/searchfunk'
 
 
 export async function getStaticProps() {

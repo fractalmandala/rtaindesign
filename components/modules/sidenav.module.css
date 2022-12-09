@@ -66,11 +66,7 @@
 @media screen and (max-width: 768px) and (min-width: 641px) {
 
   .sidenav {
-    width: 100vw;
-    padding: 104px 8px 32px 24px;
-    height: max-content;
-    background-color: #272727;
-    text-align: center;
+    display: none;
   }
 
 }
@@ -78,11 +74,7 @@
 @media screen and (max-width: 640px) {
 
   .sidenav {
-    width: 100vw;
-    padding: 88px 16px 16px 16px;
-    height: max-content;
-    background-color: #272727;
-    text-align: center;
+    display: none;
   }
 
 }

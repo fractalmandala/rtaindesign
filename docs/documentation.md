@@ -161,4 +161,21 @@ Then, create a new page titled 'fetching.tsx' (or any other name, in .js, .jsx o
 > )} 
 > export default Foitch
 
-Let us break down what happens on this page. 
+Let us break down what happens on this page.
+
+##### Supabase Setup and Fetch
+
+This documentation assumes you already have a Supabase account and project set up, giving you access to a project URL and an anon key. Create a .env.local file in the root folder and paste the following data:
+
+`NEXT_PUBLIC_SUPABASE_URL=insert_url_here`
+`NEXT_PUBLIC_SUPABASE_ANON_KEY=insert_anon_key_here`
+
+Next, create a Supabase client in the lib folder at a new file supabase.ts. Paste in it:
+
+`import { createClient } from '@supabase/supabase-js'`
+`export default createClient(`
+`process.env.NEXT_PUBLIC_SUPABASE_URL!,`
+`process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!`
+`)`
+
+

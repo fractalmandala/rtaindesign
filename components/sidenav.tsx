@@ -21,7 +21,11 @@ const Sidenav = ({ preview, children }: Props) => {
     <Link href="/texts/vaisheshikasutra">Vaiśeṣikasūtra</Link>
     <p>Word Lists:</p>
     <Link href="#">Aṣṭadhyāyī</Link>
-    <Link href="#">Amarakośa</Link>
+    <Link href="/amarakosha">Amarakośa</Link>
+    <Link href="/grid">Grid</Link>
+    <Link href="/paradigm">Paradigm</Link>
+    <Link href="/rigveda">Ṛgveda</Link>
+    <Link href="/fetching">Fetching</Link>
     <Link href="#"></Link>
     </div>
     </>
