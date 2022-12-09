@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import supabase from '../lib/supaclient'
 import Layout from '../components/layout'
@@ -38,6 +37,7 @@ return (
     <Sidenav> </Sidenav>
     <Mother>
       <div className={styles.fullpager}>
+      <h1>Ṛgveda</h1>
         {fetchError && (<p>{fetchError}</p>)}
         {lines && (
           <div>

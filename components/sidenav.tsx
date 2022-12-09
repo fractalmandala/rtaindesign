@@ -1,8 +1,6 @@
 import styles from './modules/sidenav.module.css'
-import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
 const { Nuclia } = require('@nuclia/core');
-import DictionarySearch from '../components/supasearch'
 import Script from 'next/script'
 
 type Props = {
@@ -14,18 +12,16 @@ const Sidenav = ({ preview, children }: Props) => {
   return (
     <>
     <div className={styles.sidenav}>
-      <small>Search Dictionary:</small>
-    <DictionarySearch></DictionarySearch>
+    <Link href="/rigveda">Ṛgveda</Link>
+    <Link href="/nirukta">Nirukta</Link>
     <Link href="/texts/mimamsasutra">Mīmāṃsasūtra</Link>
     <Link href="/texts/sankhyasutra">Sāṅkhyasūtra</Link>
     <Link href="/texts/vaisheshikasutra">Vaiśeṣikasūtra</Link>
+    <Link href="/ashtadhyayi">Ashtadhyāyī</Link>
     <p>Word Lists:</p>
-    <Link href="#">Aṣṭadhyāyī</Link>
-    <Link href="/amarakosha">Amarakośa</Link>
+    <Link href="/#">Amarakośa</Link>
     <Link href="/grid">Grid</Link>
-    <Link href="/paradigm">Paradigm</Link>
-    <Link href="/rigveda">Ṛgveda</Link>
-    <Link href="/fetching">Fetching</Link>
+    <Link href="/#">Fetching</Link>
     <Link href="#"></Link>
     </div>
     </>
