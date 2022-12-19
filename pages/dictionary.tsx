@@ -1,37 +1,50 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link'
 import { useRouter } from 'next/router';
 import supabase from '../lib/supabase'
 
-const Dictionary: React.FC = () => {
-  const [words, setWords] = useState([]);
-  const [meanings, setMeanings] = useState([]);
-  const router = useRouter();
+const Dictionary = () => {
+  const [fetchError, setFetchError] = useState(null)
+  const [words, setWords] = useState(null)
 
   useEffect(() => {
-    const getDictionary = async () => {
-      const { data } = await supabase.from('db-dictionary').select('word, meanings');
-      setWords(data.map((row: any) => row.word));
-      setMeanings(data.map((row: any) => row.meaning));
+    const fetchWords = async () => {
+      const { data, error } = await supabase
+        .from('db-dictionary')
+        .select()
+      
+      if (error) {
+        setFetchError('Could not fetch the words')
+        setWords(null)
+      }
+      if (data) {
+        setWords(data)
+        setFetchError(null)
+      }
     }
-    getDictionary();
-  }, []);
 
-  return (
-    <div>
-      {words.map((word, index) => (
-        <div key={word}>
-          <div
-            onMouseEnter={() => setMeanings(meanings.map((meanings, i) => (i === index ? meanings : '')))}
-            onMouseLeave={() => setMeanings(meanings.map((meaning, i) => ''))}
-            onClick={() => setMeanings(meanings.map((meanings, i) => (i === index ? meanings : '')))}
-          >
-            {word}
-          </div>
-          <div>{meanings[index]}</div>
+    fetchWords()
+
+  }, [])
+
+
+return (
+  <div className="page home">
+    <Link href="/">Return</Link>
+    {fetchError && (<p>{fetchError}</p>)}
+    {words && (
+      <div className="smoothies">
+        {/* order-by buttons */}
+        <div className="smoothie-grid">
+          {words.map(word => (
+           <p>{word.words}</p>
+          ))}
         </div>
-      ))}
-    </div>
-  );
-};
+      </div>
+    )}
+  </div>
+)
+}
 
-export default Dictionary;
+
+export default Dictionary
