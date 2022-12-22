@@ -2,12 +2,21 @@
 
 .soamain {
   box-sizing: border-box;
-  min-height: 100vh;
+  height: max-content;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 80px;
+  padding: 20px 80px;
+  background-color: #171717;
+}
+
+.soacontainer {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #171717;
 }
 
