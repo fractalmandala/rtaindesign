@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
+
+.soamain {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 80px;
+  background-color: #171717;
+}
+
+.soamain h1 {
+  box-sizing: border-box;
+  padding: 24px 0 0 0;
+  margin: 0;
+  font-family: 'Linden Hill',serif;
+}
+
+.soamain small {
+  box-sizing: border-box;
+  font-family: 'Linden Hill',serif;
+  text-transform: uppercase;
+  margin-top: 8px;
+  padding-top: 0;
+  color: #DDBB07;
+}
+
+.soabody {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  border: 1px solid #DDBB07;
+  background-color: #171717;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 12px 0;
+  line-height: 1em;
+  margin-top: 8px;
+}
+.soabody:hover .listing {
+  display: block;
+  box-shadow: 5px 5px 12px #070707, -6px -4px 10px #171717;
+}
+
+.soabody button {
+  font-size: 16px;
+  font-family: 'Linden Hill',serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hover {
+  text-align: center;
+  width: 100%;
+}
+
+.listing {
+  display: none;
+  position: absolute;
+  background-color: #212121;
+  margin-top: 16px;
+  z-index: 1;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.listing a {
+  font-family: 'Linden Hill',serif;
+  font-size: 18px;
+  border: 0px;
+  text-transform: uppercase;
+  line-height: 2em;
+  margin: 0;
+  padding: 4px 0 0 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.listing a:hover {
+  color: #DDBB07;
+  background-color: #171717;
+}

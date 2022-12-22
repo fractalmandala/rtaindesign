@@ -1,0 +1,28 @@
+import { getAllSoaIds, getSoaData } from '../../lib/soa'
+import utilStyles from '../../styles/utils.module.css'
+
+export default function Soa({soaData}) {
+  return (
+    <div>
+      <h1>{soaData.title}</h1>
+      <p dangerouslySetInnerHTML={{__html: soaData.contentHtml}}/>
+    </div>
+  )
+}
+
+export async function getStaticPaths() {
+  const paths = getAllSoaIds()
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export async function getStaticProps({params}){
+  const soaData = await getSoaData(params.id)
+  return {
+    props: {
+      soaData
+    }
+  }
+}
