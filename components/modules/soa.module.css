@@ -100,3 +100,39 @@
   color: #DDBB07;
   background-color: #171717;
 }
+
+.spacer {
+  height: 32px;
+}
+
+.rowline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.herobox {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease-in;
+  transform-origin: center center;
+}
+
+.herobox:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.actualimage {
+  transition: all 0.3s ease-in;
+  transform-origin: center center;
+}
+
+.herobox:hover .actualimage:hover {
+  width: 300px;
+  height: 300px;
+}
