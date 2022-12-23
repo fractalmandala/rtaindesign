@@ -11,25 +11,15 @@ export default function Soahead() {
         <button className={styles.hover}>Training Kit</button>
         <div className={styles.listing}>
         <Link href="/soa/cinematic">Cinematic</Link>
-        <Link href="#">Styles</Link>
-        <Link href="#">Digital</Link>
-        <Link href="#">Artists</Link>
-        <Link href="#">Media</Link>
-        <Link href="#">Colors</Link>
-        <Link href="#">Materials</Link>
-        <Link href="#">Things/Animals</Link>
-        <Link href="#">Properties</Link>
-        <Link href="#">Lighting</Link>
-        <Link href="#">Shaders</Link>
-        <Link href="#">Dimensionality</Link>
-        <Link href="#">Camera/Lens</Link>
-        <Link href="#">Perspective</Link>
-        <Link href="#">TV/Movies</Link>
-        <Link href="#">Geometry</Link>
-        <Link href="#">Structural</Link>
-        <Link href="#">Intangibles</Link>
-        <Link href="#">Misc</Link>
-        <Link href="#">Experimental</Link>
+        <Link href="/soa/digital">Digital</Link>
+        <Link href="/soa/intangibles">Intangibles</Link>
+        <Link href="/soa/lighting">Lighting</Link>
+        <Link href="/soa/materials">Materials</Link>
+        <Link href="/soa/mediums">Mediums</Link>
+        <Link href="/soa/palettes">Palettes</Link>
+        <Link href="/soa/perspectives">Perspectives</Link>
+        <Link href="/soa/styles">Styles</Link>
+        <Link href="/soa/themes">Themes</Link>
         </div>
       </div>
     </div>

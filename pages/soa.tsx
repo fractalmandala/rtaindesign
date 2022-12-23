@@ -18,8 +18,6 @@ import perspectives from '../public/soaimages/perspectives.png'
 import stylesimg from '../public/soaimages/styles.png'
 import themes from '../public/soaimages/themes.png'
 
-
-
 export default function() {
   return (
     <div className={styles.soacontainer}>
