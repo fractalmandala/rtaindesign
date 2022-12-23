@@ -69,7 +69,7 @@ export default function() {
         </div>
       </div>
       <div className={styles.rowline}>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
           <p>Cinematic Prompts</p>
           <Image className={styles.actualimage} 
           src={cinema}
@@ -78,7 +78,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Digital Prompts</p>
           <Image className={styles.actualimage}
           src={digital}
@@ -87,7 +87,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Ingtangible Prompts</p>
           <Image className={styles.actualimage}
           src={intangibles}
@@ -96,7 +96,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Lighting Prompts</p>
           <Image className={styles.actualimage}
           src={lighting}
@@ -105,7 +105,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Materials Prompts</p>
           <Image className={styles.actualimage}
           src={materials}
@@ -116,7 +116,7 @@ export default function() {
         </div>
       </div>
       <div className={styles.rowline}>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Mediums Prompts</p>
           <Image className={styles.actualimage} 
           src={mediums}
@@ -125,7 +125,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Palettes Prompts</p>
           <Image className={styles.actualimage}
           src={palettes}
@@ -134,7 +134,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Perspectives Prompts</p>
           <Image className={styles.actualimage}
           src={perspectives}
@@ -143,7 +143,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Style-Related Prompts</p>
           <Image className={styles.actualimage}
           src={stylesimg}
@@ -152,7 +152,7 @@ export default function() {
           height='200'
           />
         </div>
-        <div className={styles.herobox}>
+        <div className={styles.heroboxlinked}>
         <p>Theme-Related Prompts</p>
           <Image className={styles.actualimage}
           src={themes}

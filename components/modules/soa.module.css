@@ -140,13 +140,27 @@
   align-items: center;
 }
 
-.herobox p {
+.heroboxlinked {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease-in;
+  transform-origin: center center;
+  box-sizing: border-box;
+  padding: 8px;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.herobox p, .heroboxlinked p {
   font-family: 'Linden Hill',serif;
   font-size: 18px;
   padding: 0;
 }
 
-.herobox:hover {
+.herobox:hover, .heroboxlinked:hover {
   width: 300px;
   height: 300px;
 }
@@ -158,6 +172,11 @@
 }
 
 .herobox:hover .actualimage:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.heroboxlinked:hover .actualimage:hover {
   width: 300px;
   height: 300px;
 }
