@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import autochrome from '../../public/soaimages/palettes/Autochrome.png'
 import black from '../../public/soaimages/palettes/Black.png'
 import cinecolor from '../../public/soaimages/palettes/Cinecolor.png'
@@ -156,6 +156,7 @@ export default function Palettes() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

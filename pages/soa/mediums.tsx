@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import canvas from '../../public/soaimages/mediums/Canvas.png'
 import cartographic from '../../public/soaimages/mediums/Cartographic.png'
 import carving from '../../public/soaimages/mediums/Carving.png'
@@ -260,6 +260,7 @@ export default function Mediums() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

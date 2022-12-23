@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import benevolent from '../../public/soaimages/intangibles/Benevolent.png'
 import bleak from '../../public/soaimages/intangibles/Bleak.png'
 import cheerful from '../../public/soaimages/intangibles/Cheerful.png'
@@ -249,6 +249,7 @@ export default function Intangibles() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import aerial from '../../public/soaimages/perspectives/Aerial_Perspective.png'
 import aerialview from '../../public/soaimages/perspectives/Aerial_View.png'
 import closeup from '../../public/soaimages/perspectives/Closeup.png'
@@ -101,6 +101,7 @@ export default function Perspectives() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

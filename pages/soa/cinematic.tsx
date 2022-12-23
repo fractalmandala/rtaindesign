@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Soahead from '../../components/soaheader'
+import Soafooter from '../../components/soafooter'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
 import awardwinning from '../../public/soaimages/cinema/Award_Winning_Photography.png'
@@ -238,6 +239,7 @@ export default function Cinematic() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

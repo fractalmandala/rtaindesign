@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import biomorphic from '../../public/soaimages/styles/art_style/Biomorphic.png'
 import classical from '../../public/soaimages/styles/art_style/Classical.png'
 import classicism from '../../public/soaimages/styles/art_style/Classicism.png'
@@ -441,6 +441,7 @@ export default function Styles() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

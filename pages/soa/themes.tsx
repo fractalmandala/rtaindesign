@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import themes from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import architecture from '../../public/soaimages/themes/architecture/Architecture.png'
 import balinese from '../../public/soaimages/themes/architecture/Balinese_Architecture.png'
 import bronzepunk from '../../public/soaimages/themes/architecture/Bronzepunk.png'
@@ -1838,6 +1838,7 @@ export default function Themes() {
       <div className={themes.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

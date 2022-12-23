@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import blenderrender from '../../public/soaimages/digital/Blender_Render.png'
 import cinema4D from '../../public/soaimages/digital/Cinema4D.png'
 import cyclesrender from '../../public/soaimages/digital/Cycles_Render.png'
@@ -165,6 +165,7 @@ export default function Digital() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

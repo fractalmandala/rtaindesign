@@ -11,6 +11,7 @@
   justify-content: center;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 @keyframes blinker {
@@ -26,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px 80px;
   background-color: #171717;
 }
 
@@ -40,6 +40,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #171717;
 }
 
@@ -48,6 +49,7 @@
   padding: 24px 0 0 0;
   margin: 0;
   font-family: 'Linden Hill',serif;
+  text-align: center;
 }
 
 .soamain small {
@@ -57,13 +59,13 @@
   margin-top: 8px;
   padding-top: 0;
   color: #DDBB07;
+  text-align: center;
 }
 
 .soabody {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  width: 20vw;
   height: 100%;
   border: 1px solid #474747;
   background-color: #171717;
@@ -81,9 +83,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  width: 20vw;
   border: 1px solid #474747;
-  font-size: 16px;
   font-family: 'Inter Tight',sans-serif;
   border-radius: 8px;
   text-transform: uppercase;
@@ -95,6 +95,7 @@
   align-items: center;
   height: 44px;
   background-color: #DDBB07;
+  margin-top: 16px;
 }
 
 .maingallerylink a {
@@ -107,7 +108,6 @@
 }
 
 .soabody button {
-  font-size: 16px;
   font-family: 'Inter Tight',sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -194,8 +194,6 @@
 .heroboxlinked {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 200px;
   transition: all 0.3s ease-in;
   transform-origin: center center;
   box-sizing: border-box;
@@ -203,6 +201,7 @@
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+  height: 100%;
 }
 
 .heroboxinner {
@@ -229,7 +228,6 @@
 
 .heroboxlinked p {
   font-family: 'Inter Tight',sans-serif;
-  font-size: 16px;
   padding: 0;
   color: #474747;
   text-align: center;
@@ -260,6 +258,7 @@
   transform-origin: center center;
   border: 2px solid #313131;
   padding: 8px;
+  object-fit: cover;
 }
 
 .innerimage {
@@ -283,7 +282,6 @@
 
 .imagescontainer h4 {
   font-family: 'Linden Hill',serif;
-  font-size: 24px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -343,7 +341,7 @@
 
 .enderspace a {
   font-family: 'Inter Tight',serif;
-  color: white;
+  color: #DDBB07;
   transition: all 0.11s ease-in;
   transform-origin: center center;
 }
@@ -389,7 +387,6 @@
 .rendergrid {
   box-sizing: border-box;
   display: flex;
-  width: 25%;
   height: 100%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -411,7 +408,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 88%;
+}
+
+.basiccol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.basiccol p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
 }
 
 .thebigfetch {
@@ -442,9 +453,97 @@
 
 .theimage {
   transform-origin: center center;
-  transition: all 0.18s ease;
+  transition: all 0.3s ease;
+  object-fit: cover;
 }
 
 .theimage:hover {
   transform: scale(2);
+}
+
+.soaguidearea {
+  width: 80%;
+  box-sizing: border-box;
+  border: 1px solid #474747;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.soaguidearea h5 {
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.soafooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #474747;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.soafooter a {
+  color: #DDBB07;
+}
+
+.soafooter h4 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+  color: #575757;
+  text-align: center;
+}
+
+.soafooter p {
+  padding: 0;
+  font-size: 12px;
+  color: #575757;
+}
+
+@media screen and (min-width: 769px) {
+  .soamain { padding: 20px 80px;}
+  .soamain h1 { font-size: 48px;}
+  .soamain small { font-size: 12px;}
+  .warning {font-size: 16px;}
+  .soabody, .maingallerylink {width: 20vw;}
+  .soabody button, .maingallerylink {font-size: 16px;}
+  .heroboxlinked { width: 200px; height: 200px; }
+  .heroboxlinked p {font-size: 16px;}
+  .imagescontainer h4 {font-size: 24px;}
+  .basicrow {width: 88%;}
+  .rendergrid {width: 25%;}
+  .soafooter { padding: 8px; height: 100px;}
+  .soafooter p {text-align: center;}
+
+}
+
+@media screen and (max-width: 768px) {
+  .soamain { padding: 20px 24px;}
+  .soamain h1 { font-size: 32px;}
+  .soamain small { font-size: 12px;}
+  .warning {font-size: 14px;}
+  .soabody, .maingallerylink { width: 72vw;}
+  .soabody button, .maingallerylink {font-size: 14px;}
+  .basiccol p {margin-bottom: 4px;}
+  .heroboxlinked { width: 300px; height: 320px; margin-top: 24px;}
+  .heroboxlinked p {font-size: 16px !important;}
+  .heroboxlinked a {font-size: 24px;}
+  .imagescontainer h4 {font-size: 18px; margin-bottom: 2px;}
+  .imagescontainer p {font-size: 12px; margin-top: 0; padding-top: 0; text-align: center; padding-bottom: 8px; width: 72%;}
+  .heroboxinner p {padding-bottom: 0;}
+  .basicrow {width: 100%;}
+  .rendergrid {width: 100%;}
+  .soafooter { padding: 24px; height: 160px;}
+  .soafooter h4 {margin-bottom: 8px;}
+  .soafooter p {text-align: center;}
 }

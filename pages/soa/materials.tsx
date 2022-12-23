@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import basalt from '../../public/soaimages/materials/Basalt.png'
 import cellulose from '../../public/soaimages/materials/Cellulose.png'
 import chert from '../../public/soaimages/materials/Chert.png'
@@ -218,6 +218,7 @@ export default function Materials() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }

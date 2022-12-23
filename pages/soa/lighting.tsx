@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Soahead from '../../components/soaheader'
 import styles from '../../components/modules/soa.module.css'
 import Image from 'next/image'
-
+import Soafooter from '../../components/soafooter'
 import blinding from '../../public/soaimages/lighting/Blinding_Light.png'
 import cropped from '../../public/soaimages/lighting/Cropped.png'
 import darklighting from '../../public/soaimages/lighting/Dark_Lighting.png'
@@ -239,6 +239,7 @@ export default function lighting() {
       <div className={styles.enderspace}>
         <Link href="">Back to Top</Link>
       </div>
+      <Soafooter></Soafooter>
     </div>
   )
 }
