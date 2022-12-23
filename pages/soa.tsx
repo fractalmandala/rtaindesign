@@ -22,7 +22,7 @@ export default function() {
   return (
     <div className={styles.soacontainer}>
       <Soahead></Soahead>
-      <div className={styles.spacer}></div>
+      <div className={styles.maingallerylink}><Link href="/soa/soagallery">VIEW CREATED GALLERY</Link></div>
       <div className={styles.imagescontainer}>
       <div className={styles.rowline}>
         <div className={styles.herobox}>
@@ -115,6 +115,7 @@ export default function() {
           />
         </div>
       </div>
+      <div className={styles.seperating}></div>
       <div className={styles.rowline}>
         <div className={styles.heroboxlinked}>
         <p>Mediums Prompts</p>
@@ -162,6 +163,7 @@ export default function() {
           />
         </div>
       </div>
+      <div className={styles.seperating}></div>
       </div>
       <div className={styles.spacer}></div>
     </div>

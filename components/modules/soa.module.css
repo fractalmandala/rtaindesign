@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.warning {
+  color: #ffffff;
+  animation: blinker 3s infinite forwards;
+  width: 100%;
+  background-color: #fe4a49;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes blinker {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+
 .soamain {
   box-sizing: border-box;
   height: 100%;
@@ -58,6 +75,30 @@
   padding: 12px 0;
   line-height: 1em;
   margin-top: 8px;
+}
+
+.maingallerylink {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  border: 1px solid #474747;
+  font-size: 16px;
+  font-family: 'Inter Tight',sans-serif;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  background-color: #DDBB07;
+}
+
+.maingallerylink a {
+  color: #272727;
 }
 
 .soabody:hover .listing {
@@ -322,4 +363,87 @@
   border-top: 1px solid #DDBB07;
   width: 72%;
   text-align: center;
+}
+
+.seperating {
+  width: 100%;
+  height: 16px;
+}
+
+.gallerycontainer {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.renders {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rendergrid {
+  box-sizing: border-box;
+  display: flex;
+  width: 25%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.singlebox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  padding: 8px 32px 0 32px;
+}
+
+.basicrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 88%;
+}
+
+.thebigfetch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+
+.imgnum {
+  font-size: 12px;
+}
+
+.prompt {
+  font-size: 14px;
+}
+
+.promptlabel {
+  font-size: 12px;
+  color: #474747;
+}
+
+.prompter p {
+  color: white;
+}
+
+.theimage {
+  transform-origin: center center;
+  transition: all 0.18s ease;
+}
+
+.theimage:hover {
+  transform: scale(2);
 }

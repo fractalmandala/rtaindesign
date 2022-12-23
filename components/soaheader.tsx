@@ -4,6 +4,7 @@ import styles from '../components/modules/soa.module.css'
 export default function Soahead() {
   return (
     <div className={styles.soamain}>
+      <div className={styles.warning}>This Section is NOT Optimized for Mobile. Please View on Desktop/PC</div>
       <Link href="/"><small>Return to Homepage</small></Link>
       <Link href="/soa"><h1>Scrolls of Āryavarta</h1></Link>
       <small>Midjourney Trainer and Workshop for Dharmalore/ Dharmafuturism</small>
