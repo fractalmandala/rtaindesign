@@ -70,13 +70,15 @@ export default function() {
       </div>
       <div className={styles.rowline}>
         <div className={styles.heroboxlinked}>
-          <p>Cinematic Prompts</p>
-          <Image className={styles.actualimage} 
-          src={cinema}
-          alt="Cinema"
-          width="200"
-          height='200'
-          />
+          <Link href="/soa/cinematic">
+            <p>Cinematic Prompts</p>
+            <Image className={styles.actualimage} 
+              src={cinema}
+              alt="Cinema"
+              width="200"
+              height='200'
+            />
+          </Link>  
         </div>
         <div className={styles.heroboxlinked}>
         <p>Digital Prompts</p>

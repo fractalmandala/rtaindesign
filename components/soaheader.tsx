@@ -4,12 +4,13 @@ import styles from '../components/modules/soa.module.css'
 export default function Soahead() {
   return (
     <div className={styles.soamain}>
-      <h1>Scrolls of Āryavarta</h1>
+      <Link href="/"><small>Return to Homepage</small></Link>
+      <Link href="/soa"><h1>Scrolls of Āryavarta</h1></Link>
       <small>Midjourney Trainer and Workshop for Dharmalore/ Dharmafuturism</small>
       <div className={styles.soabody}>
         <button className={styles.hover}>Training Kit</button>
         <div className={styles.listing}>
-        <Link href="#">Themes</Link>
+        <Link href="/soa/cinematic">Cinematic</Link>
         <Link href="#">Styles</Link>
         <Link href="#">Digital</Link>
         <Link href="#">Artists</Link>
