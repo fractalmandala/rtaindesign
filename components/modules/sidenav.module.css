@@ -35,6 +35,17 @@
   color: #a7a7a7;
 }
 
+.special {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #373737;
+}
+
+.special a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #DDBB07;
+}
+
 @media screen and (min-width: 900px) {
 
 .sidenav {
