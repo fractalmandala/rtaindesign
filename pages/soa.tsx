@@ -7,12 +7,25 @@ import Indian_Style from '../soa/images/Indian_Style.png'
 import StoneKing from '../soa/images/StoneKing.png'
 import Lady from '../soa/images/Lady.png'
 import primalrishi from '../soa/images/primalrishi.webp'
+import cinema from '../soa/images/cinema.png'
+import digital from '../soa/images/digital.png'
+import intangibles from '../soa/images/intangibles.png'
+import lighting from '../soa/images/lighting.png'
+import materials from '../soa/images/materials.png'
+import mediums from '../soa/images/mediums.png'
+import palettes from '../soa/images/palettes.png'
+import perspectives from '../soa/images/perspectives.png'
+import stylesimg from '../soa/images/styles.png'
+import themes from '../soa/images/themes.png'
+
+
 
 export default function() {
   return (
     <div className={styles.soacontainer}>
       <Soahead></Soahead>
       <div className={styles.spacer}></div>
+      <div className={styles.imagescontainer}>
       <div className={styles.rowline}>
         <div className={styles.herobox}>
           <Image className={styles.actualimage} 
@@ -54,6 +67,101 @@ export default function() {
           height='200'
           />
         </div>
+      </div>
+      <div className={styles.rowline}>
+        <div className={styles.herobox}>
+          <p>Cinematic Prompts</p>
+          <Image className={styles.actualimage} 
+          src={cinema}
+          alt="Cinema"
+          width="200"
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Digital Prompts</p>
+          <Image className={styles.actualimage}
+          src={digital}
+          alt="Digital"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Ingtangible Prompts</p>
+          <Image className={styles.actualimage}
+          src={intangibles}
+          alt="Intangibles"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Lighting Prompts</p>
+          <Image className={styles.actualimage}
+          src={lighting}
+          alt="Lighting"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Materials Prompts</p>
+          <Image className={styles.actualimage}
+          src={materials}
+          alt="Materials"
+          width='200'
+          height='200'
+          />
+        </div>
+      </div>
+      <div className={styles.rowline}>
+        <div className={styles.herobox}>
+        <p>Mediums Prompts</p>
+          <Image className={styles.actualimage} 
+          src={mediums}
+          alt="Mediums"
+          width="200"
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Palettes Prompts</p>
+          <Image className={styles.actualimage}
+          src={palettes}
+          alt="Palettes"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Perspectives Prompts</p>
+          <Image className={styles.actualimage}
+          src={perspectives}
+          alt="Perspectives"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Style-Related Prompts</p>
+          <Image className={styles.actualimage}
+          src={stylesimg}
+          alt="Styles"
+          width='200'
+          height='200'
+          />
+        </div>
+        <div className={styles.herobox}>
+        <p>Theme-Related Prompts</p>
+          <Image className={styles.actualimage}
+          src={themes}
+          alt="Themes"
+          width='200'
+          height='200'
+          />
+        </div>
+      </div>
       </div>
     </div>
   )
