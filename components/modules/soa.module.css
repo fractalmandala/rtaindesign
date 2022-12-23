@@ -158,6 +158,11 @@
   font-family: 'Linden Hill',serif;
   font-size: 18px;
   padding: 0;
+  color: #474747;
+}
+
+.herobox:hover p, .heroboxlinked:hover p {
+  color: white;
 }
 
 .herobox:hover, .heroboxlinked:hover {
@@ -168,15 +173,17 @@
 .actualimage {
   transition: all 0.3s ease-in;
   transform-origin: center center;
-  border: 2px solid white;
+  border: 2px solid #313131;
 }
 
 .herobox:hover .actualimage:hover {
   width: 300px;
   height: 300px;
+  border: 2px solid white;
 }
 
 .heroboxlinked:hover .actualimage:hover {
   width: 300px;
   height: 300px;
+  border: 2px solid white;
 }
