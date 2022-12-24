@@ -12,7 +12,6 @@ const Sidenav = ({ preview, children }: Props) => {
   return (
     <>
     <div className={styles.sidenav}>
-    <div className={styles.special}><Link href="/soa">Scrolls of Āryavarta</Link></div>  
     <Link href="/rigveda">Ṛgveda</Link>
     <Link href="/nirukta">Nirukta</Link>
     <Link href="/texts/mimamsasutra">Mīmāṃsasūtra</Link>
